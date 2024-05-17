@@ -37,7 +37,7 @@
   content: '';
   position: absolute;
   inset: 0;
-  background: repeating-conic-gradient(from var(--a), rgb(23, 213, 190), rgb(228, 162, 118), rgb(167, 53, 0), rgb(66, 8, 37), rgb(167, 53, 0), rgba(228, 162, 118), rgba(214, 171, 145));
+  background: repeating-conic-gradient(from var(--a), rgb(214, 171, 145), rgb(228, 162, 118), rgb(167, 53, 0), rgb(66, 8, 37), rgb(167, 53, 0), rgba(228, 162, 118), rgba(214, 171, 145));
   border-radius: 15px;
   animation: rotating 4s linear infinite;
   filter: blur(3px);

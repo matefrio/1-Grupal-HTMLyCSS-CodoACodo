@@ -146,7 +146,6 @@
 .fondo__card .card .info__card {
     color: var(--text-dark);
     width: 60%;
-    /* transform: translateY(160%); */
     transition: all 0.7s ease;
 }
 

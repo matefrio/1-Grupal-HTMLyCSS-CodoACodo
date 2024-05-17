@@ -20,15 +20,18 @@
         background-image: none;
     }
 
-    .nav__logo span { display: flex; }
+    .nav__logo span { 
+        display: flex; 
+        font-size: 1.75rem;
+    }
 
     .nav__logo:hover {
-        transform: scale(200%) translateX(3.5rem);
+        transform: scale(150%) translateX(2.5rem);
         transition: transform 0.8s ease-in-out;
     }
     
     .nav__logo:hover span{
-        transform: scale(100%) translateX(5rem) translateY(2rem);
+        transform: scale(110%) translateX(-0.75rem) translateX(7rem) translateY(2rem);
         transition: transform 0.8s ease-in-out;
     }
 
@@ -36,9 +39,11 @@
 
     .nav__links {
         padding: 0;
-        margin-right: 5rem;
+        left: 35%;
+        margin-left: 0rem; 
+        margin-right: 2rem;
         width: unset;
-        position: static;
+        position: absolute;
         transform: none;
         flex-direction: row;
         background-image: none;
@@ -57,7 +62,7 @@
         border-radius: 5px;
     }
 
-    .nav__links a { font-size: 1.3rem;}
+    .nav__links a { font-size: 1.2rem;}
 
     #nav-Top:hover #nav-links .nav__a:hover {
         background-color: rgb(34, 7, 0);
@@ -124,17 +129,17 @@
         background-color: #805939;
         transition: transform 0.6s ease-in-out;
     }
+
+    #quien .nav__a span:nth-child(2) { top: 17px; }
+
+    #quien .nav__a span:nth-child(3) { top: 17px; }
 }
 
-@media (width > 1200px) {
-    .nav__logo:hover span { transform: scale(90%) translateX(7rem) translateY(3rem); }
-}
+@media (width > 857px) {
+    #quien .nav__a span:nth-child(2) { top: 8px !important; }
 
-@media (width > 1000px) {
-    .nav__logo span { font-size: 2.3rem; }
-}
+    #quien .nav__a span:nth-child(3) { top: 8px !important }
 
-@media (width < 1000px) {
     .nav__logo span {
         font-size: 2rem;
         transform: scale(90%);
@@ -142,26 +147,24 @@
     }
 
     .nav__links { 
-        margin-left: 4rem; 
+        position: static;
+        margin-left: 0rem; 
         margin-right: 1rem;
     }
 
-    .nav__links a { font-size: 1.2rem;}
+    .nav__logo:hover { transform: scale(200%) translateX(3.5rem); }
 
-    .nav__logo:hover { transform: scale(150%) translateX(2.5rem); }
-
-    .nav__logo:hover span { transform: scale(90%) translateX(-0.75rem) translateY(3rem); }
+    .nav__logo:hover span { transform: scale(90%) translateX(5rem) translateY(2rem) !important; }
 }
 
-@media (width < 864px) {
-    .nav__logo span { font-size: 1.75rem; }
+@media (width > 1000px) {
+    .nav__logo span { font-size: 2.3rem; }
 
-    .nav__links { 
-        margin-left: 4rem; 
-        margin-right: 0rem;
-    }
+    .nav__logo:hover span { transform: scale(100%) translateX(7rem) translateY(2rem) !important; }
 
-    #quien .nav__a span:nth-child(2) { top: 17px; }
+    .nav__links { margin-right: 5rem; }
+}
 
-    #quien .nav__a span:nth-child(3) { top: 17px; }
+@media (width > 1200px) {
+    .nav__logo:hover span { transform: scale(90%) translateX(11rem) translateY(2rem) !important;; }
 }
