@@ -1,0 +1,190 @@
+@media (width < 768px) {
+    #galeria {
+        margin-top: 3px;
+        top: 99px;
+    }
+
+    #galeria #expositor {
+        margin-top: 25px;
+        width: 80%;
+        height: auto;
+    }
+
+    #cat-links {
+        height: auto;
+        width: 20%;
+        padding: 0;
+    }
+
+    #cat-links #cat__bar {
+        background-image: linear-gradient(rgba(26, 5, 0, 0.9), rgba(26, 5, 0, 0.8), rgba(26, 5, 0, 0.8), transparent);
+    }
+
+    #cat-links:hover {
+        left: 0%;
+        width: 275px;
+        z-index: 100;
+        background-image: linear-gradient(transparent, rgba(26, 5, 0), rgba(26, 5, 0));
+        -webkit-box-reflect: none;
+    }
+
+    #cat-links #cat__header {
+        background-image: linear-gradient(rgba(26, 5, 0, 0.993), rgba(26, 5, 0, 0.9));
+    }
+    
+    #cat-links:hover #cat__header {
+        display: block;
+        background-image: linear-gradient(transparent, rgba(26, 5, 0, 0.1), rgba(26, 5, 0));
+        width: 100%;
+    }
+
+    #cat__bar .nav__item {
+        padding: 7px 1rem ;
+    }
+
+    #cat-links:hover #cat__bar {
+        display: block;
+        background-color: rgba(26, 5, 0);
+        width: 100%;
+    }
+    
+    #cat-links:hover #header__icon {
+        display: none;
+        width: 0px;
+        padding: 0px;
+    }
+    
+    #cat-links:hover #icon__text {
+        display: flex;
+        align-items: center;
+        background-image: linear-gradient(to right, rgba(26, 5, 0, 0.1), rgba(26, 5, 0));
+        border-radius: 2%;
+        margin-left: 1rem;
+    }
+    
+    #cat-links:hover #icon__text #cat__text {
+        display: flex;
+        flex-direction: column;
+        width: auto;
+    }
+    
+    #cat-links:hover #cat__text span:nth-child(1) {
+        font-weight: 700;
+        font-size: 30px;
+    }
+    
+    #cat-links:hover #cat__text span:nth-child(2) {
+        font-size: 25px;
+    }
+    
+    #cat-links:hover #cat__header .cat__icon {
+        display: none;
+    } 
+    
+    #cat-links:hover #cat__bar .nav__a {
+        height: 50px;
+        border-radius: 2%;
+        font-size: 20px;
+        width: 100%;
+        padding: 0px 5px;
+        display: flex;
+        overflow-y: hidden;
+        flex-direction: column;
+    }
+    
+    #cat-links:hover #cat__bar .nav__a .img__bar{
+        display: none;
+        width: 0px;
+        padding: 0px;
+    }
+    
+    #cat-links:hover #cat__bar .nav__a  a {
+        display: flex;
+        margin-bottom: 15px;
+        width: 100%;
+        color: var(--white);
+        text-align: left;
+    }
+    
+    #cat-links:hover #cat__bar .nav__a li {
+        display: flex;
+        flex-direction: column;
+    }
+    
+    #cat-links:hover #cat__bar .nav__a li span {
+        display: none;
+        align-self: center;
+        justify-self: center;
+    }
+}
+
+@media (width > 768px) {
+    #cat-links {
+        width: 25%;
+        background-color: transparent;
+        position: relative;
+    }
+
+    #cat__header {
+        display: flex;
+    }
+
+    #header__icon {
+        width: 0px;
+        padding: 0px;
+    }
+
+    #icon__text {
+        display: flex;
+        align-items: center;
+        width: 100%;
+        background-image: linear-gradient(to right, rgba(26, 5, 0, 0.1), rgba(26, 5, 0));
+        border-radius: 2%;
+        margin-left: 1rem;
+    }
+
+    #icon__text #cat__text {
+        display: flex;
+        color: var(--white);
+        flex-direction: column;
+    }
+
+    #cat__text span:nth-child(1) {
+        font-weight: 700;
+        font-size: 30px;
+    }
+
+    #cat__text span:nth-child(2) {
+        font-size: 25px;
+    }
+
+    #cat__header .cat__icon {
+        display: none;
+    } 
+
+    #cat__bar .nav__a {
+        height: 50px;
+        border-radius: 2%;
+        font-size: 20px;
+        width: 100%;
+        padding: 0px 5px;
+        display: flex;
+        overflow-y: hidden;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    #cat__bar .nav__a .img__bar{
+        width: 0px;
+        padding: 0px;
+    }
+
+    #cat__bar .nav__a  a {
+        color: var(--white);
+        display: flex;
+        margin-top: 15px;
+        margin-bottom: 15px;
+        width: 100%;
+        text-align: left;
+    }
+}
