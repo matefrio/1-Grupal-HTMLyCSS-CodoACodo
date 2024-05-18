@@ -342,4 +342,12 @@ form #send-container input:hover {
     background-color: rgba(255, 255, 255, 0.3);
     border-radius: 0 0 1.5rem 1.5rem;
   }
+
+  form .input-container input {
+    width: 90%;
+  }
+
+  .input-container #message-input {
+    width: 100%;
+  }
 }
