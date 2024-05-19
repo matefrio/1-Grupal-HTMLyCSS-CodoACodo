@@ -1,0 +1,146 @@
+@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Permanent+Marker&display=swap");
+@font-face {
+  font-family: "coffee+tea demo";
+  src: url("../font/coffee+teademo-Regular.ttf") format("truetype");
+}
+
+:root {
+  --primary-color: #361201;
+  --text-dark: #201404;
+  --white: #c2a89e;
+  --mas-white: #eed9d0;
+}
+
+* {
+  font-family: "coffee+tea demo", "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: linear-gradient(
+      transparent,
+      transparent,
+      rgba(29, 4, 0, 0.699)
+    ),
+    url("../img/bg.jpg");
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  overflow: scroll;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.home {
+  display: flex;
+  flex-direction: column;
+  margin-top: 15vh;
+}
+
+.home-title {
+  margin: auto;
+  padding: 1.5rem;
+  font-size: 5rem;
+  background-color: var(--mas-white);
+  color: var(--text-dark);
+  text-align: center;
+}
+
+.info-container {
+  display: flex;
+  margin: 5% auto 5% auto;
+  width: 80%;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.info-container-reverse {
+  display: flex;
+  flex-direction: row-reverse;
+  width: 80%;
+  margin: 5% auto 5% auto;
+  background-color: rgba(255, 255, 255, 0.5);
+}
+
+.image-container {
+  position: relative;
+  display: flex;
+  margin: auto;
+  justify-content: center;
+  width: 60%;
+  padding: 1.5rem 1.5rem 8rem 1.5rem;
+  height: auto;
+  background: white;
+  text-align: center;
+}
+
+.image-container img {
+  position: relative;
+  width: 100%;
+}
+
+.image-container img:hover {
+  opacity: 0.5;
+  transition: 2s;
+}
+
+.image-container .image-text {
+  position: absolute;
+  top: 50%;
+  left: 10%;
+  rotate: 30deg;
+  font-size: 3vw;
+}
+
+.info-image-container {
+  width: 30%;
+  padding: 1% 1% 4% 1%;
+  background-color: white;
+}
+
+.info-image {
+  width: 100%;
+  height: 100%;
+  aspect-ratio: 1/1;
+}
+
+.info-text-container {
+  position: relative;
+  width: 70%;
+}
+
+.info-text {
+  font-size: 2.5rem;
+}
+
+@media (width < 768px) {
+  .home-title {
+    padding: 0.8rem;
+    font-size: 1.8rem;
+  }
+
+  .info-container {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-container-reverse {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .info-image-container {
+    width: auto;
+    height: 40vh;
+    padding: 3% 3% 12% 3%;
+    background-color: white;
+  }
+
+  .info-text {
+    margin: 2.5% 0 2.5% 0;
+    font-size: 1.4rem;
+  }
+}

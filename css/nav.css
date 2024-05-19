@@ -26,6 +26,7 @@ nav {
   align-items: center;
   gap: 10px;
   transition: transform 0.4s ease-out;
+  text-decoration: none;
 }
 
 .nav__logo img {
