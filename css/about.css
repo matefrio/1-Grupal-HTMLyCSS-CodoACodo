@@ -51,154 +51,154 @@
   height: 100%;
 }
 
-  .about-upper span {
-    display: block;
-    position: absolute;
-    background-image: linear-gradient(rgba(240, 167, 100, 0.699), transparent,rgba(221, 94, 20, 0.699)), url("../img/fondo-about.jpeg");
-    background-size: cover;
-    transform: rotate(180deg);
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-  
-  .about-upper .title {
-    font-size: 2.3rem;
-    position: relative;
-    text-shadow: 0 10px 15px var(--primary-color);
-    padding: 2rem;
-    text-align: center;
-    font-weight: bold;
-    z-index: 10;
-  }
-  
-  .about-upper .about-us {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3rem;
-  }
-  
-  .about-us .about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    position: relative;
-    color: var(--text-dark);
-    padding: 2rem;
-    width: 50%;
-    z-index: 2;
-  }
-  
-  .about-us .about-text .sub-title {
-    font-weight: bold;
-    font-size: 2rem;
-    padding-right: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .about-us .about-text .text {
-    font-size: 1.6rem;
-    text-align: justify;
-  }
-  
-  .about-upper .about-us .about-image-div  {
-    background-image: url(../img/barman.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 2rem;
-    width: 40%;
-    height: 500px;
-    border-radius: 2%;
-    z-index: 2;
-  }
-  
-  /* ABOUT INFERIOR */
-  .about-lower {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 15px;
-    width: 60%;
-    background-color: rgba(177, 150, 110, 0.699);
-    box-shadow: -15px 15px 30px;
-  }
-  
-  .about-lower .title {
-    padding: 1.25%;
-    text-align: center;
-    font-weight: bold;
-  }
-  
-  .about-lower .contact {
-    display: flex;
-    padding: 2.5%;
-    height: 50vh;
-  }
-  
-  .contact .contact-map {
-    height: 100%;
-    width: 50%;
-  }
-  
-  .contact-map iframe {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .contact .contact-form .sub-title {
-    text-align: center;
-  }
-  
-  .contact .contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    /* border: 2px solid black;
-    background-color: white; */
-  }
-  
-  .contact .contact-form form {
-    width: 100%;
-    height: 100%;
-  }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  }
-  
-  form .input-container {
-    display: flex;
-    flex-direction: column;
-    height: 10%;
-    /* padding: 2.5% 0 2.5% 0; */
-  }
-  
-  form .input-container label {
-    text-align: center;
-  }
-  
-  form .input-container input {
-    width: 40%;
-    text-align: center;
-    margin: auto;
-    background-color: antiquewhite;
-  }
-  
-  form #message-container {
-    height: 60%;
-  }
-  
-  .input-container #message-input {
-    width: 70%;
-    height: 100%;
-  }
-  
-  form #send-container input {
-    width: auto;
-    height: auto;
-  }
+.about-upper span {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(rgba(240, 167, 100, 0.699), transparent,rgba(221, 94, 20, 0.699)), url("../img/fondo-about.jpeg");
+  background-size: cover;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.about-upper .title {
+  font-size: 2.3rem;
+  position: relative;
+  text-shadow: 0 10px 15px var(--primary-color);
+  padding: 2rem;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.about-upper .about-us {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.about-us .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: left;
+  align-items: center;
+  position: relative;
+  color: var(--text-dark);
+  padding: 2rem;
+  width: 50%;
+  z-index: 2;
+}
+
+.about-us .about-text .sub-title {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-us .about-text .text {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.about-upper .about-us .about-image-div  {
+  background-image: url("../img/barman.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 2rem;
+  width: 40%;
+  height: 500px;
+  border-radius: 2%;
+  z-index: 2;
+}
+
+/* ABOUT INFERIOR */
+.about-lower {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  width: 60%;
+  background-color: rgba(177, 150, 110, 0.699);
+  box-shadow: -15px 15px 30px;
+}
+
+.about-lower .title {
+  padding: 1.25%;
+  text-align: center;
+  font-weight: bold;
+}
+
+.about-lower .contact {
+  display: flex;
+  padding: 2.5%;
+  height: 50vh;
+}
+
+.contact .contact-map {
+  height: 100%;
+  width: 50%;
+}
+
+.contact-map iframe {
+  width: 100%;
+  height: 100%;
+}
+
+.contact .contact-form .sub-title {
+  text-align: center;
+}
+
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  /* border: 2px solid black;
+  background-color: white; */
+}
+
+.contact .contact-form form {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+form .input-container {
+  display: flex;
+  flex-direction: column;
+  height: 10%;
+  /* padding: 2.5% 0 2.5% 0; */
+}
+
+form .input-container label {
+  text-align: center;
+}
+
+form .input-container input {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  background-color: antiquewhite;
+}
+
+form #message-container {
+  height: 60%;
+}
+
+.input-container #message-input {
+  width: 70%;
+  height: 100%;
+}
+
+form #send-container input {
+  width: auto;
+  height: auto;
+}

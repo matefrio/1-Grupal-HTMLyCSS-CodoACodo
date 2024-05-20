@@ -1,0 +1,80 @@
+@media (width < 643px) {
+    #poster-text h1 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+    #poster-p1, #poster-p4{ 
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+    .carousel-buttons { top: 87%;}
+}
+
+@media (width > 768px) {
+    #poster { margin-top: 0; }
+
+    #poster-text { height: 80%; }
+
+    .carousel-buttons { top: 87%;}
+}
+
+@media (width > 1000px) {
+    #poster-text h1 {
+        margin-left: 2rem;
+        margin-right: 2rem;
+        text-align: center;
+    }
+
+    #poster-p3 { display: block;}
+    
+    #poster-p4 { 
+        position: relative;
+        margin-left: 2rem;
+        margin-right: 2rem;
+        bottom: 5%;
+        text-align: center;
+    }
+
+    .tiendas__galeria { height: 500px;}
+
+    .tiendas__galeria .cover__slide { height: 100%;}
+
+    .tienda__card h3 { font-size: 2.5rem;}
+
+    .tienda__card p { font-size: 2rem;}
+
+    .index__button a { font-size: 2.3rem;}
+
+    .index__button .nav__a span:nth-child(2) { top: 31px; }
+    
+    .index__button .nav__a span:nth-child(3) { top: 31px; }
+
+    .carousel-buttons label {
+        width: 50px;
+        height: 50px;
+        font-size: 1.6rem;
+        font-weight: 500;
+    }
+}
+
+@media (width > 1384px) {
+    #poster-text { margin-bottom: 4rem; }
+
+    #poster-p2 { display: block;}
+
+    #poster-p4 { margin-top: 2rem };
+}
+
+@media (width > 1561px) {
+    #poster-text { margin-bottom: 0; }
+}
+
+@media (hover: none) {
+    .carousel-buttons {
+        display: none;
+    }
+}

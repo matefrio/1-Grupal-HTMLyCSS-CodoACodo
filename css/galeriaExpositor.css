@@ -186,17 +186,6 @@
     opacity: 0.75;
 } 
 
-@property --a {
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: 0deg;
-}
-
-@keyframes rotating {
-    0% { --a: 0deg; }
-    100% { --a: 360deg; }
-}
-
 .fondo__card:hover {
     width: 100% !important;
     height: 100% !important;
@@ -216,11 +205,6 @@
                  0 0 40px var(--primary-color);
     transition: all 0.3s ease-in-out;
 }
-
-/* .fondo__card:hover .info__card {
-    transform: translateY(0%);
-    transition: all 1s ease;
-} */
 
 .fondo__card:hover .info__card h2 {
     font-size: 1.8rem !important;
