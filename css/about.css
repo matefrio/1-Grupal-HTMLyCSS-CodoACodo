@@ -14,25 +14,16 @@
   height: auto;
 }
 
-.title {
-  font-size: 2.3rem;
-  position: relative;
-  text-shadow: 0 10px 15px var(--primary-color);
-  padding: 2rem;
-  text-align: center;
-  font-weight: bold;
-  z-index: 10;
-}
-
 #div-primero {
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
   width: 80%;
+  height: auto;
 }
 
-/* #div-primero::before {
+#div-primero::before {
   content: "";
   position: absolute;
   inset: 0;
@@ -68,15 +59,14 @@
   border-radius: 15px;
   animation: rotating 4s linear infinite;
   filter: blur(3px);
-} */
+}
 
 .about-upper {
   border-radius: 2%;
   position: relative;
   overflow: hidden;
   width: 100%;
-  min-height: 80vh;
-  /* height: 100%; */
+  height: 100%;
 }
 
 .about-upper span {
@@ -95,21 +85,36 @@
   z-index: 2;
 }
 
+.about-upper .title {
+  font-size: 2.3rem;
+  position: relative;
+  text-shadow: 0 10px 15px var(--primary-color);
+  text-shadow: 0 0 10px var(--mas-white), 0 0 25px var(--white),
+    0 0 40px var(--primary-color);
+  padding: 2rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+}
+
 .about-upper .about-us {
   display: flex;
   flex-wrap: wrap;
   padding: 3rem;
-  height: 100%;
 }
 
 .about-us .about-text {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   color: var(--text-dark);
+  text-shadow: 0 0 10px var(--mas-white), 0 0 25px var(--white),
+    0 0 40px var(--primary-color);
   padding: 2rem;
+  padding-top: 0;
   width: 50%;
   z-index: 2;
 }
@@ -128,46 +133,16 @@
 
 .about-upper .about-us .about-image-div {
   background-image: url("../img/barman.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
   margin-left: 2rem;
   width: 40%;
-  min-height: 50vh;
+  height: 500px;
   border-radius: 2%;
   z-index: 2;
-}
-
-/* MQ */
-@media (width < 768px) {
-  .about-upper {
-    margin: 7rem 0 2rem 0;
-  }
-  .about-upper .about-us {
-    flex-direction: column;
-    padding: 1.5rem;
-  }
-
-  .about-us .about-text {
-    width: 100%;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 1.5rem 1.5rem 0 0;
-  }
-
-  .about-us .about-text .sub-title {
-    font-weight: bolder;
-  }
-
-  .about-us .about-text .text {
-    font-weight: bolder;
-  }
-
-  .about-upper .about-us .about-image-div {
-    width: 100%;
-    height: 50vh;
-    margin: 0;
-    border-radius: 0 0 1.5rem 1.5rem;
-  }
 }
 
 /* ABOUT INFERIOR */
@@ -209,20 +184,31 @@
 }
 
 .about-lower .title {
-  padding: 1.25%;
+  font-size: 2.3rem;
+  position: relative;
+  text-shadow: 0 10px 15px var(--primary-color);
+  text-shadow: 0 0 10px var(--mas-white), 0 0 25px var(--white),
+    0 0 40px var(--primary-color);
+  padding: 2rem;
+  padding-bottom: 0;
   text-align: center;
   font-weight: bold;
+  z-index: 10;
 }
 
 .about-lower .contact {
   display: flex;
   padding: 2.5%;
   height: 100%;
+  overflow: hidden;
 }
 
 .contact .contact-map {
   height: 100%;
   width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
 }
 
 .contact-map {
@@ -238,17 +224,28 @@
   bottom: 0;
   right: 0;
   width: 100%;
-  height: 50vh;
+  height: 80vh;
 }
 
 .contact .contact-form .sub-title {
+  font-size: 2.3rem;
+  position: relative;
+  text-shadow: 0 10px 15px var(--primary-color);
+  text-shadow: 0 0 10px var(--mas-white), 0 0 25px var(--white),
+    0 0 40px var(--primary-color);
+  padding: 2rem;
+  padding-bottom: 0;
   text-align: center;
+  font-weight: bold;
+  z-index: 10;
 }
 
 .contact .contact-form {
   display: flex;
   flex-direction: column;
   width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
 }
 
 .contact .contact-form form {
@@ -277,12 +274,27 @@ form .input-container label {
   font-weight: bold;
 }
 
+form .input-container .contact-preference {
+  display: flex;
+  justify-content: space-around;
+}
+
 form .input-container input {
   width: 40%;
   text-align: center;
   margin: auto;
   background: radial-gradient(rgb(255, 220, 197), rgba(240, 167, 100));
   outline: black;
+  font-size: 1rem;
+}
+
+form .input-container #reason {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  background: radial-gradient(rgb(255, 220, 197), rgba(240, 167, 100));
+  outline: black;
+  font-size: 1rem;
 }
 
 form #message-container {
@@ -327,15 +339,76 @@ form #send-container input:hover {
 }
 
 /* MQ */
+@media (width < 1000px) {
+  .about-upper .about-us {
+    padding: 2rem;
+  }
+
+  .about-us .about-text {
+    width: 100%;
+    margin: 0 10%;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .about-upper .about-us .about-image-div {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    top: 90%;
+    margin: 1rem 10%;
+  }
+}
 @media (width < 768px) {
+  .about-upper {
+    margin: 7rem 0 2rem 0;
+  }
+  .about-upper .about-us {
+    padding: 1rem;
+  }
+
+  .about-us .about-text {
+    width: 100%;
+    margin: 0 5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
+  .about-us .about-text .sub-title {
+    font-weight: bolder;
+  }
+
+  .about-us .about-text .text {
+    font-weight: bolder;
+  }
+
+  .about-upper .about-us .about-image-div {
+    margin: 0 5%;
+    margin-bottom: 2rem;
+  }
+
   .about-lower .contact {
     flex-direction: column;
     padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
   }
 
   .contact .contact-map {
-    height: 100%;
+    position: relative;
     width: 100%;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
+  }
+
+  .contact-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
   }
 
   .contact .contact-form {
