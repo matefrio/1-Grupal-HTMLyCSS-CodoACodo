@@ -10,12 +10,6 @@
         margin-right: 2rem;
         text-align: center;
     }
-
-    .carousel-buttons { top: 87%;}
-}
-
-@media (width > 642px) {
-    .carousel-buttons { transform: translateY(0%);}
 }
 
 @media (width < 768px) {
@@ -26,6 +20,10 @@
         left: 0;
         top: 43.5%;
     }
+
+    .tienda__card { gap: 30px; }
+
+    .carousel-btns { transform: translateY(0%);}
 }
 
 @media (width > 768px) {
@@ -33,19 +31,47 @@
 
     #poster-text { height: 80%; }
 
-    .carousel-buttons { 
+    .carousel-btns { 
         top: 87%;
         transform: translateY(-50%);
     }
 
     .blog__content:hover {
-        width: 600px;
+        width: 500px;
         height: 300px;
+        left: -15%;
     }
 
-    #index .blog__content:nth-child(odd) .blog__text { left: -51%; }
+    .blog__content:nth-child(odd):hover { left: 15%; }
+
+    #index .blog__content:hover .blog__text { 
+        left: 61%; 
+        width: 400px;
+    }
+
+    #index .blog__content:nth-child(odd) .blog__text { left: -61%; }
 
     #index .blog__content:nth-child(odd) .blog__cover { right: 0%; }
+
+    #index .blog__content .pepe {
+        display: block;
+        position: absolute;
+        padding: 2rem 2rem;
+        font-size: 2rem;
+        width: 400px;
+        height: 200px;
+        left: 100%;
+    }
+
+    #index .blog__content:nth-child(odd) .pepe {
+        padding: 2rem 2rem;
+        left: -400%;
+    }
+
+    #index .blog__content:hover .pepe { 
+        left: 200%;
+        transition: all 0.5s ease-in-out;
+    }
 }
 
 @media (width > 1000px) {
@@ -73,13 +99,13 @@
 
     #index .tienda__card p { font-size: 2rem;}
 
-    .index__button a { font-size: 2rem;}
+    .index__btn a { font-size: 2rem;}
 
-    .index__button .nav__a span:nth-child(2) { top: 28px; }
+    .index__btn .nav__a span:nth-child(2) { top: 28px; }
     
-    .index__button .nav__a span:nth-child(3) { top: 28px; }
+    .index__btn .nav__a span:nth-child(3) { top: 28px; }
 
-    .carousel-buttons label {
+    .carousel-btns label {
         width: 50px;
         height: 50px;
         font-size: 1.6rem;
@@ -88,7 +114,17 @@
 
     #index .blog__content h4 { font-size: 2rem; }
     
-    #index .blog__content .blog__button a { font-size: 1.8rem; }
+    #index .blog__content .blog__btn a { font-size: 1.8rem; }
+}
+
+@media (width > 1200px) {
+    #index .blog__content:hover { left: -25%; }
+
+    #index .blog__content:nth-child(odd):hover { left: 25%; }
+
+    #index .blog__content:hover .pepe { left: 140%; }
+
+    #index .blog__content:nth-child(odd):hover .pepe { left: -120%; }    
 }
 
 @media (width > 1384px) {
@@ -104,7 +140,7 @@
 }
 
 @media (hover: none) {
-    .carousel-buttons {
+    .carousel-btns {
         display: none;
     }
 }

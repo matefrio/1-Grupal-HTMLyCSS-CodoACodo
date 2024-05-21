@@ -66,7 +66,11 @@
   font-size: 2.3rem;
   position: relative;
   text-shadow: 0 10px 15px var(--primary-color);
+  text-shadow: 0 0 10px var(--mas-white),
+                 0 0 25px var(--white),
+                 0 0 40px var(--primary-color);
   padding: 2rem;
+  padding-bottom: 0;
   text-align: center;
   font-weight: bold;
   z-index: 10;
@@ -81,11 +85,15 @@
 .about-us .about-text {
   display: flex;
   flex-direction: column;
-  justify-content: left;
+  justify-content: flex-start;
   align-items: center;
   position: relative;
   color: var(--text-dark);
+  text-shadow: 0 0 10px var(--mas-white),
+                 0 0 25px var(--white),
+                 0 0 40px var(--primary-color);
   padding: 2rem;
+  padding-top: 0;
   width: 50%;
   z-index: 2;
 }
@@ -107,6 +115,8 @@
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
   margin-left: 2rem;
   width: 40%;
   height: 500px;
@@ -201,4 +211,35 @@ form #message-container {
 form #send-container input {
   width: auto;
   height: auto;
+}
+
+@media (width < 1000px) {
+  .about-upper .about-us { padding: 2rem; }
+
+  .about-us .about-text { 
+    width: 100%;
+    margin: 0 10%;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    justify-content: center; 
+  }
+
+  .about-upper .about-us .about-image-div  {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    top: 90%;
+    margin: 1rem 10%;
+  }
+}
+
+@media (width < 768px) {
+  .about-upper .about-us { padding: 1rem; }
+
+  .about-us .about-text { margin: 0 5%;}
+
+  .about-upper .about-us .about-image-div { 
+    margin: 0 5%;
+    margin-bottom: 2rem;
+  }
 }
