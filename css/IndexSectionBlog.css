@@ -109,7 +109,7 @@
     filter: blur(3px);
 }
 
-#index .blog__content .blog__img {
+#index .blog__content .blg__img {
    position: relative;
    background-size: cover;
    background-position: center;
@@ -119,11 +119,11 @@
    z-index: 2;
 }
 
-#index .blog__content #img-blog1 { background-image: url("../img/home/blog1.jpg"); }
+#index .blog__content #img-blg1 { background-image: url("../img/home/blog1.jpg"); }
 
-#index .blog__content #img-blog2 { background-image: url("../img/home/blog2.jpg"); }
+#index .blog__content #img-blg2 { background-image: url("../img/home/blog2.jpg"); }
 
-#index .blog__content #img-blog3 { 
+#index .blog__content #img-blg3 { 
     background-image: url("../img/home/blog3.jpg"); 
     background-position: left;
 }
@@ -210,7 +210,7 @@
     transition: all 0.5s ease-in-out;
 }
 
-#index .blog__content:hover .blog__img { 
+#index .blog__content:hover .blg__img { 
     width: 300px;
     height: 300px; 
 }
