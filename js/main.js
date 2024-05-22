@@ -5,7 +5,6 @@ const liGale = document.getElementById("gale");
 const liPerf = document.getElementById("perfil");
 const menuBtnIcon = menuBtn.querySelector("i");
 
-
 // Funcion botones en Nav
 menuBtn.addEventListener("click", (e) => {
   navLinks.classList.toggle("open");
@@ -27,28 +26,26 @@ function esMenor768px() {
   return window.innerWidth < 768;
 }
 
-
 // Función para enviar una solicitud DELETE al servidor
 function eliminarUsuario(id) {
-    if (confirm('¿Estás seguro de eliminar este usuario?')) {
-        fetch(`/admin/eliminar/${id}`, {
-            method: 'DELETE'
-        })
-        .then(response => {
-            if (response.ok) {
-                alert('Usuario eliminado correctamente');
-                // Actualizar la página o hacer cualquier otra acción necesaria
-            } else {
-                alert('Error al eliminar el usuario');
-            }
-        })
-        .catch(error => {
-            console.error('Error:', error);
-            alert('Error al eliminar el usuario');
-        });
-    }
+  if (confirm("¿Estás seguro de eliminar este usuario?")) {
+    fetch(`/admin/eliminar/${id}`, {
+      method: "DELETE",
+    })
+      .then((response) => {
+        if (response.ok) {
+          alert("Usuario eliminado correctamente");
+          // Actualizar la página o hacer cualquier otra acción necesaria
+        } else {
+          alert("Error al eliminar el usuario");
+        }
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+        alert("Error al eliminar el usuario");
+      });
+  }
 }
-
 
 // Funcion animaciones Scroll
 const scrollRevealOption = {
@@ -73,3 +70,30 @@ ScrollReveal().reveal(".socials", {
   ...scrollRevealOption,
   delay: 1500,
 });
+
+// Validar inputs del form
+document
+  .querySelector(".contact-form")
+  .addEventListener("submit", function (e) {
+    var form = e.target;
+    var nombre = form.nombre.value.trim();
+    var telefono = form.telefono.value.trim();
+    var email = form.email.value.trim();
+    var contactPreference = form.contactPreference.value;
+    var reason = form.reason.value;
+    var mensaje = form.mensaje.value.trim();
+    var terms = form.terms.checked;
+
+    if (
+      !nombre ||
+      !telefono ||
+      !email ||
+      !contactPreference ||
+      !reason ||
+      !mensaje ||
+      !terms
+    ) {
+      alert("Todos los campos son obligatorios");
+      e.preventDefault();
+    }
+  });
