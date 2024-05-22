@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="es">
+  
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -109,14 +110,20 @@
             </div>
             <div class="contact-form">
               <h1 class="sub-title">Envianos un mensaje</h1>
-              <form action="">
+              <form action="POST">
                 <div class="input-container">
                   <label for="name">Nombre:</label>
-                  <input type="text" name="nombre" placeholder="Cristian" />
+                  <input
+                    id="name"
+                    type="text"
+                    name="nombre"
+                    placeholder="Cristian"
+                  />
                 </div>
                 <div class="input-container">
                   <label for="telephone">Teléfono:</label>
                   <input
+                    id="telephone"
                     type="tel"
                     name="telefono"
                     placeholder="54 11 1234 1234"
@@ -125,6 +132,7 @@
                 <div class="input-container">
                   <label for="email">Direccion de correo electrónico</label>
                   <input
+                    id="email"
                     type="email"
                     name="email"
                     placeholder="ejemplo@email.com"
@@ -143,7 +151,7 @@
                       />
                     </div>
                     <div class="radio">
-                      <label for="phone">Teléfono</label>
+                      <label for="phoneContact">Teléfono</label>
                       <input
                         type="radio"
                         id="phoneContact"
@@ -154,7 +162,7 @@
                   </div>
                 </div>
                 <div class="input-container">
-                  <label for="motivo">Motivo del contacto:</label>
+                  <label for="reason">Motivo del contacto:</label>
                   <select id="reason" name="reason">
                     <option value="consulta">Consulta</option>
                     <option value="sugerencia">Sugerencia</option>
@@ -163,7 +171,7 @@
                   </select>
                 </div>
                 <div id="message-container" class="input-container">
-                  <label for="mensaje">Tu mensaje:</label>
+                  <label for="message-input">Tu mensaje:</label>
                   <textarea name="mensaje" id="message-input"></textarea>
                 </div>
                 <div class="input-container">

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<html lang="es">
 
     <head>
         <meta charset="UTF-8" />
@@ -25,7 +25,7 @@
         <nav id="nav-Top">
             <div class="nav__bar">
                 <a href="#" class="nav__logo">
-                    <img src="./img/nuevo-icono.png" alt="logo" />
+                    <img src="./img/nuevo-icono.png" alt="logo"/>
                     <span>Kawa Kafé</span>
                 </a>
                 <div class="nav_menu_btn" id="menu-btn">
@@ -73,10 +73,10 @@
 
         <main id="galeria">
 
-            <sidebar id="cat-links">
+            <div id="cat-links">
                 <div id="cat__header">
 
-                    <img src="./img/tienda/icono.png" id="header__icon" title="upc iconos"></img>
+                    <img src="./img/tienda/icono.png" alt="icono de barra" id="header__icon" title="upc iconos"/>
 
                     <div id="icon__text">
                         <div id="cat__text">
@@ -90,11 +90,11 @@
                 </div>
                 
                 <div id="cat__bar">
-                    <li class="nav__item">
-                        <ul class="nav__a" id="cat-var">
+                    <ul class="nav__item">
+                        <li class="nav__a" id="cat-var">
                             
                             <span class="img__bar">
-                                <img src="./img/tienda/bolsa-de-cafe.png"></img>
+                                <img src="./img/tienda/bolsa-de-cafe.png" alt="icono de variedades"/>
                             </span>
                             
                             <a href="#"><span>Variedades Café</span></a>
@@ -106,13 +106,13 @@
                                 <li class="dropdown-item"><span>Caribeños</span></li>
                                 <li class="dropdown-item"><span>Mamá África</span></li>
                             </ul>
-                        </ul>
-                    </li>
-                    <li class="nav__item">
-                        <ul class="nav__a" id="cat-com">
+                        </li>
+                    </ul>
+                    <ul class="nav__item">
+                        <li class="nav__a" id="cat-com">
                             
                             <span class="img__bar">
-                                <img src="./img/tienda/grano-de-cafe.png"></img>
+                                <img src="./img/tienda/grano-de-cafe.png" alt="icono de combos"/>
                             </span>
                             
                             <a  href="#"><span>Combos de Café</span></a>
@@ -122,13 +122,13 @@
                                 <li class="dropdown-item"><span>Combos Especialidad</span></li>
                                 <li class="dropdown-item"><span>Only Blends</span></li>
                             </ul>
-                        </ul>                            
-                    </li>
-                    <li class="nav__item">
-                        <ul class="nav__a" id="cat-sab">
+                        </li>                            
+                    </ul>
+                    <ul class="nav__item">
+                        <li class="nav__a" id="cat-sab">
                             
                             <span class="img__bar">
-                                <img src="./img/tienda/taza-de-cafe.png"></img>
+                                <img src="./img/tienda/taza-de-cafe.png" alt="icono de bar"/>
                             </span>
                             
                             <a  href="#"><span>Sabores del Bar</span></a>
@@ -140,13 +140,13 @@
                                 <li class="dropdown-item"><span>Coockies, Masitas</span></li>
                                 <li class="dropdown-item"><span>Choco Artesanales</span></li>
                             </ul>
-                        </ul>                            
-                    </li>
-                    <li class="nav__item">
-                        <ul class="nav__a" id="cat-inst">
+                        </li>                            
+                    </ul>
+                    <ul class="nav__item">
+                        <li class="nav__a" id="cat-inst">
                             
                             <span class="img__bar">
-                                <img src="./img/tienda/cafetera-moka.png"></img>
+                                <img src="./img/tienda/cafetera-moka.png" alt="icono de instrumentos"/>
                             </span>
                             
                             <a href="#"><span>Instrumental y Accesorios</span></a>
@@ -158,11 +158,11 @@
                                 <li class="dropdown-item"><span>Tazas y Jarras</span></li>
                                 <li class="dropdown-item"><span>Barista Tools</span></li>
                             </ul>
-                        </ul>                            
-                    </li>
+                        </li>                            
+                    </ul>
                 </div>
                 
-            </sidebar>
+            </div>
 
             <article id="expositor">
                 <div class="container__card" id="exp-ini">

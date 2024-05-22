@@ -4,6 +4,7 @@
     background-image: linear-gradient(to bottom, transparent,  rgba(26, 3, 0, 0.548), rgba(24, 3, 0, 0.836), rgba(24, 3, 0, 0.836),rgba(24, 3, 0, 0.836), rgba(24, 3, 0, 0.836), rgba(26, 3, 0, 0.548), transparent);
     justify-content: flex-start;
     align-items: center;
+    margin-bottom: 4rem;
     color: var(--white);
 }
 
