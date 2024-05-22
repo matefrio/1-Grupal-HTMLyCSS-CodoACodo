@@ -28,25 +28,13 @@ body {
     background-repeat: no-repeat;
     overflow: scroll;
     font-weight: 400;
-    font-style: normal;     
+    font-style: normal;
+    height: auto     
 }
 
-body .container {
-    height: 1300px;
-    overflow: hidden;
-}
+main { transition: all 0.4s ease-in; }
 
-body .container.gale__content {
-    height: auto;
-}
-
-main {
-    transition: all 0.4s ease-in;
-}
-
-a {
-    text-decoration: none;
-}
+a { text-decoration: none; }
 
 img {
     width: 100%;
@@ -78,9 +66,7 @@ h2 {
 }
 
 @media (width > 768px) {
-    .socials > div {
-        justify-content: flex-start;
-    }
+    .socials > div { justify-content: flex-start; }
 }
 
 @keyframes slide-animation {

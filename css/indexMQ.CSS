@@ -14,12 +14,20 @@
 
 @media (width < 769px) {
     #index .blog__content:hover { left: 0;}
+
+    #index .blog__content .blog__text { 
+        top: 0;
+        transition: all 0s ease; 
+    }
     
-    #index .blog__content:hover .blog__text {
+    #index .blog__content:hover .blog__text { 
         height: 400px;
-        left: 0;
         top: 43.5%;
     }
+
+    #index .blog__content .blog__text h4 { transition: all 1s ease; }
+
+    #index .blog__content .blog__text p { transition: all 1s ease; }
 
     .tienda__card { gap: 30px; }
 
@@ -44,12 +52,20 @@
 
     .blog__content:nth-child(odd):hover { left: 15%; }
 
+    #index .blog__content .blog__text { 
+        left: 51%;
+        height: 200px;
+        transition: all 0.5s ease-in-out; 
+    }
+
     #index .blog__content:hover .blog__text { 
         left: 61%; 
         width: 400px;
+        height: 300px;
+        transition: all 0.5s ease-in-out;
     }
 
-    #index .blog__content:nth-child(odd) .blog__text { left: -61%; }
+    #index .blog__content:nth-child(odd):hover .blog__text { left: -61%; }
 
     #index .blog__content:nth-child(odd) .blog__cover { right: 0%; }
 
@@ -61,6 +77,7 @@
         width: 400px;
         height: 200px;
         left: 100%;
+        transition: all 1.5s ease-in-out;
     }
 
     #index .blog__content:nth-child(odd) .pepe {
@@ -70,6 +87,11 @@
 
     #index .blog__content:hover .pepe { 
         left: 200%;
+        transition: all 0.5s ease-in-out;
+    }
+
+    #index .blog__content:nth-child(odd):hover .pepe { 
+        left: -200%;
         transition: all 0.5s ease-in-out;
     }
 }
@@ -114,7 +136,7 @@
 
     #index .blog__content h4 { font-size: 2rem; }
     
-    #index .blog__content .blog__btn a { font-size: 1.8rem; }
+    #index .blog__content:hover .blog__btn a { font-size: 1.8rem; }
 }
 
 @media (width > 1200px) {
@@ -122,9 +144,18 @@
 
     #index .blog__content:nth-child(odd):hover { left: 25%; }
 
-    #index .blog__content:hover .pepe { left: 140%; }
+    #index .blog__content:hover .blog__text { width: 500px; }
 
-    #index .blog__content:nth-child(odd):hover .pepe { left: -120%; }    
+    #index .blog__content:hover .pepe { 
+        left: 145%; 
+        margin-left: 4rem;
+    }
+
+    #index .blog__content:nth-child(odd):hover .pepe { 
+        left: -140%;
+        margin-left: 0%; 
+        margin-right: 4rem;
+    }    
 }
 
 @media (width > 1384px) {

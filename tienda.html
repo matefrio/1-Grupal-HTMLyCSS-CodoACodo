@@ -22,458 +22,456 @@
     </head>
 
     <body>
-        <section class="container gale__content">
-
-            <nav id="nav-Top">
-                <div class="nav__bar">
-                    <a href="#" class="nav__logo">
-                        <img src="./img/nuevo-icono.png" alt="logo" />
-                        <span>Kawa Kafé</span>
+        <nav id="nav-Top">
+            <div class="nav__bar">
+                <a href="#" class="nav__logo">
+                    <img src="./img/nuevo-icono.png" alt="logo" />
+                    <span>Kawa Kafé</span>
+                </a>
+                <div class="nav_menu_btn" id="menu-btn">
+                    <i class="ri-menu-3-line"></i>
+                </div>
+            </div>
+            <ul class="nav__links" id="nav-links">
+                <li>
+                    <a class="nav__a" href="index.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Home      
+                        <span></span>                      
                     </a>
-                    <div class="nav_menu_btn" id="menu-btn">
-                        <i class="ri-menu-3-line"></i>
+                </li>
+                <li>
+                    <a class="nav__a" href="tienda.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Productos
+                        <span></span>
+                    </a>
+                </li>
+                <li id="quien">
+                    <a class="nav__a" href="about.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Quienes Somos
+                        <span></span>
+                    </a>
+                </li>
+                <li><a class="nav__a" href="blog.html">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        Blog
+                        <span></span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+
+        <main id="galeria">
+
+            <sidebar id="cat-links">
+                <div id="cat__header">
+
+                    <img src="./img/tienda/icono.png" id="header__icon" title="upc iconos"></img>
+
+                    <div id="icon__text">
+                        <div id="cat__text">
+                            <span>Coffe Shop</span>
+                            <span>Nuestros Productos</span>
+                        </div>
+                    </div>
+
+                    <i class='bx bx-chevrons-right cat__icon'></i>
+                    
+                </div>
+                
+                <div id="cat__bar">
+                    <li class="nav__item">
+                        <ul class="nav__a" id="cat-var">
+                            
+                            <span class="img__bar">
+                                <img src="./img/tienda/bolsa-de-cafe.png"></img>
+                            </span>
+                            
+                            <a href="#"><span>Variedades Café</span></a>
+                            
+                            <ul class="nav__dropdown">
+                                <li class="dropdown-item"><span>De Brasil</span></li>
+                                <li class="dropdown-item"><span>De Colombia</span></li>
+                                <li class="dropdown-item"><span>Tostado Italiano</span></li>
+                                <li class="dropdown-item"><span>Caribeños</span></li>
+                                <li class="dropdown-item"><span>Mamá África</span></li>
+                            </ul>
+                        </ul>
+                    </li>
+                    <li class="nav__item">
+                        <ul class="nav__a" id="cat-com">
+                            
+                            <span class="img__bar">
+                                <img src="./img/tienda/grano-de-cafe.png"></img>
+                            </span>
+                            
+                            <a  href="#"><span>Combos de Café</span></a>
+                            
+                            <ul class="nav__dropdown">
+                                <li class="dropdown-item"><span>Combos Degustación</span></li>
+                                <li class="dropdown-item"><span>Combos Especialidad</span></li>
+                                <li class="dropdown-item"><span>Only Blends</span></li>
+                            </ul>
+                        </ul>                            
+                    </li>
+                    <li class="nav__item">
+                        <ul class="nav__a" id="cat-sab">
+                            
+                            <span class="img__bar">
+                                <img src="./img/tienda/taza-de-cafe.png"></img>
+                            </span>
+                            
+                            <a  href="#"><span>Sabores del Bar</span></a>
+                            
+                            <ul class="nav__dropdown">
+                                <li class="dropdown-item"><span>Cafecito y bebidas</span></li>
+                                <li class="dropdown-item"><span>Calientes y Salados</span></li>
+                                <li class="dropdown-item"><span>Panificados</span></li>
+                                <li class="dropdown-item"><span>Coockies, Masitas</span></li>
+                                <li class="dropdown-item"><span>Choco Artesanales</span></li>
+                            </ul>
+                        </ul>                            
+                    </li>
+                    <li class="nav__item">
+                        <ul class="nav__a" id="cat-inst">
+                            
+                            <span class="img__bar">
+                                <img src="./img/tienda/cafetera-moka.png"></img>
+                            </span>
+                            
+                            <a href="#"><span>Instrumental y Accesorios</span></a>
+                            
+                            <ul class="nav__dropdown">
+                                <li class="dropdown-item"><span>Cafeteras</span></li>
+                                <li class="dropdown-item"><span>Cápsulas Recargables</span></li>
+                                <li class="dropdown-item"><span>Molinillos Manuales</span></li>
+                                <li class="dropdown-item"><span>Tazas y Jarras</span></li>
+                                <li class="dropdown-item"><span>Barista Tools</span></li>
+                            </ul>
+                        </ul>                            
+                    </li>
+                </div>
+                
+            </sidebar>
+
+            <article id="expositor">
+                <div class="container__card" id="exp-ini">
+                    <div class="fondo__card">
+                        <a href="./index.html" class="card">           
+                            <h1>Nosotros</h1>
+                            <div class="info__card">
+                                <h2>Nosotros</h2>
+                                <p>Te invitamos a conocernos...</p>
+                            </div>
+                        </a>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="ini-var">            
+                            <h1>Variedades</h1>
+                            <div class="info__card">
+                                <h2>Nuestro Café</h2>
+                                <p>Aquí podés conocer la variedad de sabores que podemos ofrecer...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="ini-comb">            
+                            <h1 class="text__dark">Buenas Mesclas</h1>
+                            <div class="info__card">
+                                <h2>Proba nuestros Combos</h2>
+                                <p>Para paladares finos, o curiosos sin expertís, le recomendamos nuestros combos preparados para deleitar...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="ini-sab">            
+                            <h1>Sabor a café</h1>
+                            <div class="info__card">
+                                <h2>Servicios en Nuestro Bar</h2>
+                                <p>Sentaté a disfrutar nuestras delicias, o llevate alguno de nuestros productos para acompañar un exquisito café...</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="ini-instru">            
+                            <h1>Para Aficionados</h1>
+                            <div class="info__card">
+                                <h2>Para poder hacer en Casa</h2>
+                                <p>Inová, animate, y experimentá. Aquí podes encontrar con lo necesario, para producir tu cafecito bien casero...</p>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+
+                <div class="container__card" id="exp-var">
+                    <div class="fondo__card">
+                        <div class="card" id="var-brasil">            
+                            <h1>Brasil</h1>
+                            <div class="info__card">
+                                <h2>Café de Brasil</h2>
+                                <p>De origen Arábigo, el Coffea Canephora se caracteriza por ser de un sabor suave, dulce y equilibrado con aromas frutales muy agradables.</p>
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div class="fondo__card">
+                        <div class="card" id="var-colom">            
+                            <h1>Colombia</h1>
+                            <div class="info__card">
+                                <h2>Café de Colombia</h2>
+                                <p>Agradables y suaves al paladar, los amantes del café lo aprecian por su  sabor dulce y afrutado, con ligeros toques a nuez.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="var-italyl">            
+                            <h1>Italia</h1>
+                            <div class="info__card">
+                                <h2>Café Tostado Italiano</h2>
+                                <p>El tueste italiano se caracteriza por un tueste más oscuro, los granos de café se someten a altas temperaturas para lograr el sabor y el aroma deseados.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="var-centroAm">            
+                            <h1>Centro América</h1>
+                            <div class="info__card">
+                                <h2>Café de Centro América</h2>
+                                <p>Su sabor tiene un notable equilibrio entre dulzura y acidez, agradable aroma e intenso sabor que recuerdan a ciertas notas afrutadas en perfecta armonía con frutos secos.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fondo__card">
+                        <div class="card" id="var-africa">            
+                            <h1>África</h1>
+                            <div class="info__card">
+                                <h2>Café Etiope</h2>
+                                <p>El café Harrar con sus tonos afrutados o vinosos, complejas notas de arándanos y acidez brillante.</p>
+                            </div>
+                        </div>
                     </div>
                 </div>
-                <ul class="nav__links" id="nav-links">
-                    <li>
-                        <a class="nav__a" href="index.html">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Home      
-                            <span></span>                      
-                        </a>
-                    </li>
-                    <li>
-                        <a class="nav__a" href="tienda.html">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Productos
-                            <span></span>
-                        </a>
-                    </li>
-                    <li id="quien">
-                        <a class="nav__a" href="about.html">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Quienes Somos
-                            <span></span>
-                        </a>
-                    </li>
-                    <li><a class="nav__a" href="blog.html">
-                            <span></span>
-                            <span></span>
-                            <span></span>
-                            Blog
-                            <span></span>
-                        </a>
-                    </li>
+
+                <div class="container__card" id="exp-comb">
+                    <div class="fondo__card">
+                        <div class="card" id="comb-degu">            
+                            <h1>Para Degustar</h1>
+                            <div class="info__card">
+                                <h2>Café de Degustación</h2>
+                                <p>“En el aroma del café, encuentro un viaje de sabores esperando en cada taza.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="comb-espc">            
+                            <h1>Sabores especializados</h1>
+                            <div class="info__card">
+                                <h2>Café de especialidad</h2>
+                                <p>“El café de especialidad, un arte líquido que despierta los sentidos y acaricia el alma.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="comb-mzcl">            
+                            <h1>Nuestras Mezclas</h1>
+                            <div class="info__card">
+                                <h2>Solo Blends</h2>
+                                <p>Donde la creatividad y el juego se entrelazan, tejiendo sabores únicos que despiertan el paladar.”</p>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+
+                <div class="container__card" id="exp-sab">
+                    <div class="fondo__card">
+                        <div class="card" id="sab-barCafe">            
+                            <h1>Café, Té, Subm...</h1>
+                            <div class="info__card">
+                                <h2>Nuestros Preparados</h2>
+                                <p>Disfruta de nuestra carta, para desayuno, merienda o cena.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="sab-caliente">            
+                            <h1>Para Masticar</h1>
+                            <div class="info__card">
+                                <h2>Cómidas Calientes y Saladas</h2>
+                                <p>También podes saciar tu hambre con cualquiera de las opciones de comida salada, para un almuerzo, cena o tentepié.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="sab-panif">            
+                            <h1>Panificados</h1>
+                            <div class="info__card">
+                                <h2>Panificados Dulces y Salados</h2>
+                                <p>Acompañe su Café, con ricas medialunas, bizcochos o miñones, o llevé unos panes calentitos para acompañar su comida en casa.</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="sab-dulce">            
+                            <h1>Dulzuras</h1>
+                            <div class="info__card">
+                                <h2>Coockies y Pasteles</h2>
+                                <p>“Todo lo que necesitas es amor, pero de vez en cuando un buen postre no hace daño.”</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="fondo__card">
+                        <div class="card" id="sab-choco">            
+                            <h1>Chocolates</h1>
+                            <div class="info__card">
+                                <h2>Chocolates Artesanales</h2>
+                                <p>"El chocolate es más que alimento; es un poema que se escribe en el corazón con letras de cacao."</p>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+
+                <div class="container__card" id="exp-instru">
+                    <div class="fondo__card">
+                        <div class="card" id="instru-cafet">            
+                            <h1>Cafeteras</h1>
+                            <div class="info__card">
+                                <h2>Cafeteras de Hogar</h2>
+                                <p>¿Te gusta tu café más fuerte o más suave? Con una cafetera, puedes prepararlo exactamente como te gusta y sin salir de tu hogar.</p>
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div class="fondo__card">
+                        <div class="card" id="instru-capsu">            
+                            <h1>Para Recargas</h1>
+                            <div class="info__card">
+                                <h2>Cápsulas Recargables</h2>
+                                <p>Contamos con cápsulas, de marcas populares, para que te prepares un expresso en casa.</p>
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div class="fondo__card">
+                        <div class="card" id="instru-moli">            
+                            <h1>Molinillos</h1>
+                            <div class="info__card">
+                                <h2>Molinillos Manuales</h2>
+                                <p>Nuestros molinillos brindan la ventaja de controlar la molienda del café o las especias a mano, permitiendo una experiencia más personalizada y fresca.</p>
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div class="fondo__card">
+                        <div class="card" id="instru-jarra">            
+                            <h1>Trastos Cafeteros</h1>
+                            <div class="info__card">
+                                <h2>Tazas y Jarrones</h2>
+                                <p>Vajillas, vajillas y más vajillas, de éstilo, prácticas, cerámica o vidrio, lo que precises para disfrutar de un buen café.</p>
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div class="fondo__card">
+                        <div class="card" id="instru-baris">            
+                            <h1>De Barista</h1>
+                            <div class="info__card">
+                                <h2>Herramientas y Utensillos</h2>
+                                <p>Si estás listo para llevar la preparación de café a un nivel superior, puedes explorar nuestra selección de herramientas y utensillos de gran cálidad.</p>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+
+                <div class="container__card" id="exp-produ">
+                    <div class="fondo__card">
+                        <div class="card" id="produ-uno">            
+                            <h1>Nombre del Producto</h1>
+                            <div class="info__card">
+                                <h2>Nombre del Producto</h2>
+                                <p>Descripción del Producto</p>
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div class="fondo__card">
+                        <div class="card" id="produ-dos">            
+                            <h1>Para Recargas</h1>
+                            <div class="info__card">
+                                <h2>Cápsulas Recargables</h2>
+                                <p>Contamos con cápsulas, de marcas populares, para que te prepares un expresso en casa.</p>
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div class="fondo__card">
+                        <div class="card" id="produ-tres">            
+                            <h1>Mol</h1>
+                            <div class="info__card">
+                                <h2>Nombre del Producto</h2>
+                                <p>Descripción del Producto</p>
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div class="fondo__card">
+                        <div class="card" id="produ-cuat">            
+                            <h1>Nombre del Producto</h1>
+                            <div class="info__card">
+                                <h2>Nombre del Producto</h2>
+                                <p>Descripción del Producto</p>
+                            </div>
+                        </div>
+                    </div>                        
+
+                    <div class="fondo__card">
+                        <div class="card" id="produ-cinc">            
+                            <h1>Nombre del Producto</h1>
+                            <div class="info__card">
+                                <h2>Nombre del Producto</h2>
+                                <p>Descripción del Producto</p>
+                            </div>
+                        </div>
+                    </div>                        
+                </div>
+            </article>    
+        </main>
+
+        <footer>
+            <div>
+                <ul class="socials">
+                    <li id="face"><i class="ri-facebook-fill"></i></li>                  
+                    <li id="tw"><i class="ri-twitter-fill"></i></li> 
+                    <li><i class="ri-instagram-line"></i></li>                   
+                    <li><i class="ri-whatsapp-line"></i></li>
                 </ul>
-            </nav>
+                <span>www.Kawakafe.com</span>
+                </div>
+        </footer>
 
-            <main id="galeria">
 
-                <sidebar id="cat-links">
-                    <div id="cat__header">
-
-                        <img src="./img/tienda/icono.png" id="header__icon" title="upc iconos"></img>
-
-                        <div id="icon__text">
-                            <div id="cat__text">
-                                <span>Coffe Shop</span>
-                                <span>Nuestros Productos</span>
-                            </div>
-                        </div>
-
-                        <i class='bx bx-chevrons-right cat__icon'></i>
-                        
-                    </div>
-                    
-                    <div id="cat__bar">
-                        <li class="nav__item">
-                            <ul class="nav__a" id="cat-var">
-                                
-                                <span class="img__bar">
-                                    <img src="./img/tienda/bolsa-de-cafe.png"></img>
-                                </span>
-                                
-                                <a href="#"><span>Variedades Café</span></a>
-                                
-                                <ul class="nav__dropdown">
-                                    <li class="dropdown-item"><span>De Brasil</span></li>
-                                    <li class="dropdown-item"><span>De Colombia</span></li>
-                                    <li class="dropdown-item"><span>Tostado Italiano</span></li>
-                                    <li class="dropdown-item"><span>Caribeños</span></li>
-                                    <li class="dropdown-item"><span>Mamá África</span></li>
-                                </ul>
-                            </ul>
-                        </li>
-                        <li class="nav__item">
-                            <ul class="nav__a" id="cat-com">
-                                
-                                <span class="img__bar">
-                                    <img src="./img/tienda/grano-de-cafe.png"></img>
-                                </span>
-                                
-                                <a  href="#"><span>Combos de Café</span></a>
-                                
-                                <ul class="nav__dropdown">
-                                    <li class="dropdown-item"><span>Combos Degustación</span></li>
-                                    <li class="dropdown-item"><span>Combos Especialidad</span></li>
-                                    <li class="dropdown-item"><span>Only Blends</span></li>
-                                </ul>
-                            </ul>                            
-                        </li>
-                        <li class="nav__item">
-                            <ul class="nav__a" id="cat-sab">
-                                
-                                <span class="img__bar">
-                                    <img src="./img/tienda/taza-de-cafe.png"></img>
-                                </span>
-                                
-                                <a  href="#"><span>Sabores del Bar</span></a>
-                                
-                                <ul class="nav__dropdown">
-                                    <li class="dropdown-item"><span>Cafecito y bebidas</span></li>
-                                    <li class="dropdown-item"><span>Calientes y Salados</span></li>
-                                    <li class="dropdown-item"><span>Panificados</span></li>
-                                    <li class="dropdown-item"><span>Coockies, Masitas</span></li>
-                                    <li class="dropdown-item"><span>Choco Artesanales</span></li>
-                                </ul>
-                            </ul>                            
-                        </li>
-                        <li class="nav__item">
-                            <ul class="nav__a" id="cat-inst">
-                                
-                                <span class="img__bar">
-                                    <img src="./img/tienda/cafetera-moka.png"></img>
-                                </span>
-                                
-                                <a href="#"><span>Instrumental y Accesorios</span></a>
-                                
-                                <ul class="nav__dropdown">
-                                    <li class="dropdown-item"><span>Cafeteras</span></li>
-                                    <li class="dropdown-item"><span>Cápsulas Recargables</span></li>
-                                    <li class="dropdown-item"><span>Molinillos Manuales</span></li>
-                                    <li class="dropdown-item"><span>Tazas y Jarras</span></li>
-                                    <li class="dropdown-item"><span>Barista Tools</span></li>
-                                </ul>
-                            </ul>                            
-                        </li>
-                    </div>
-                    
-                </sidebar>
-
-                <article id="expositor">
-                    <div class="container__card" id="exp-ini">
-                        <div class="fondo__card">
-                            <a href="./index.html" class="card">           
-                                <h1>Nosotros</h1>
-                                <div class="info__card">
-                                    <h2>Nosotros</h2>
-                                    <p>Te invitamos a conocernos...</p>
-                                </div>
-                            </a>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="ini-var">            
-                                <h1>Variedades</h1>
-                                <div class="info__card">
-                                    <h2>Nuestro Café</h2>
-                                    <p>Aquí podés conocer la variedad de sabores que podemos ofrecer...</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="ini-comb">            
-                                <h1 class="text__dark">Buenas Mesclas</h1>
-                                <div class="info__card">
-                                    <h2>Proba nuestros Combos</h2>
-                                    <p>Para paladares finos, o curiosos sin expertís, le recomendamos nuestros combos preparados para deleitar...</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="ini-sab">            
-                                <h1>Sabor a café</h1>
-                                <div class="info__card">
-                                    <h2>Servicios en Nuestro Bar</h2>
-                                    <p>Sentaté a disfrutar nuestras delicias, o llevate alguno de nuestros productos para acompañar un exquisito café...</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="ini-instru">            
-                                <h1>Para Aficionados</h1>
-                                <div class="info__card">
-                                    <h2>Para poder hacer en Casa</h2>
-                                    <p>Inová, animate, y experimentá. Aquí podes encontrar con lo necesario, para producir tu cafecito bien casero...</p>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="container__card" id="exp-var">
-                        <div class="fondo__card">
-                            <div class="card" id="var-brasil">            
-                                <h1>Brasil</h1>
-                                <div class="info__card">
-                                    <h2>Café de Brasil</h2>
-                                    <p>De origen Arábigo, el Coffea Canephora se caracteriza por ser de un sabor suave, dulce y equilibrado con aromas frutales muy agradables.</p>
-                                </div>
-                            </div>
-                        </div>                        
-    
-                        <div class="fondo__card">
-                            <div class="card" id="var-colom">            
-                                <h1>Colombia</h1>
-                                <div class="info__card">
-                                    <h2>Café de Colombia</h2>
-                                    <p>Agradables y suaves al paladar, los amantes del café lo aprecian por su  sabor dulce y afrutado, con ligeros toques a nuez.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="var-italyl">            
-                                <h1>Italia</h1>
-                                <div class="info__card">
-                                    <h2>Café Tostado Italiano</h2>
-                                    <p>El tueste italiano se caracteriza por un tueste más oscuro, los granos de café se someten a altas temperaturas para lograr el sabor y el aroma deseados.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="var-centroAm">            
-                                <h1>Centro América</h1>
-                                <div class="info__card">
-                                    <h2>Café de Centro América</h2>
-                                    <p>Su sabor tiene un notable equilibrio entre dulzura y acidez, agradable aroma e intenso sabor que recuerdan a ciertas notas afrutadas en perfecta armonía con frutos secos.</p>
-                                </div>
-                            </div>
-                        </div>
-    
-                        <div class="fondo__card">
-                            <div class="card" id="var-africa">            
-                                <h1>África</h1>
-                                <div class="info__card">
-                                    <h2>Café Etiope</h2>
-                                    <p>El café Harrar con sus tonos afrutados o vinosos, complejas notas de arándanos y acidez brillante.</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="container__card" id="exp-comb">
-                        <div class="fondo__card">
-                            <div class="card" id="comb-degu">            
-                                <h1>Para Degustar</h1>
-                                <div class="info__card">
-                                    <h2>Café de Degustación</h2>
-                                    <p>“En el aroma del café, encuentro un viaje de sabores esperando en cada taza.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="comb-espc">            
-                                <h1>Sabores especializados</h1>
-                                <div class="info__card">
-                                    <h2>Café de especialidad</h2>
-                                    <p>“El café de especialidad, un arte líquido que despierta los sentidos y acaricia el alma.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="comb-mzcl">            
-                                <h1>Nuestras Mezclas</h1>
-                                <div class="info__card">
-                                    <h2>Solo Blends</h2>
-                                    <p>Donde la creatividad y el juego se entrelazan, tejiendo sabores únicos que despiertan el paladar.”</p>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="container__card" id="exp-sab">
-                        <div class="fondo__card">
-                            <div class="card" id="sab-barCafe">            
-                                <h1>Café, Té, Subm...</h1>
-                                <div class="info__card">
-                                    <h2>Nuestros Preparados</h2>
-                                    <p>Disfruta de nuestra carta, para desayuno, merienda o cena.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="sab-caliente">            
-                                <h1>Para Masticar</h1>
-                                <div class="info__card">
-                                    <h2>Cómidas Calientes y Saladas</h2>
-                                    <p>También podes saciar tu hambre con cualquiera de las opciones de comida salada, para un almuerzo, cena o tentepié.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="sab-panif">            
-                                <h1>Panificados</h1>
-                                <div class="info__card">
-                                    <h2>Panificados Dulces y Salados</h2>
-                                    <p>Acompañe su Café, con ricas medialunas, bizcochos o miñones, o llevé unos panes calentitos para acompañar su comida en casa.</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="sab-dulce">            
-                                <h1>Dulzuras</h1>
-                                <div class="info__card">
-                                    <h2>Coockies y Pasteles</h2>
-                                    <p>“Todo lo que necesitas es amor, pero de vez en cuando un buen postre no hace daño.”</p>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="fondo__card">
-                            <div class="card" id="sab-choco">            
-                                <h1>Chocolates</h1>
-                                <div class="info__card">
-                                    <h2>Chocolates Artesanales</h2>
-                                    <p>"El chocolate es más que alimento; es un poema que se escribe en el corazón con letras de cacao."</p>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="container__card" id="exp-instru">
-                        <div class="fondo__card">
-                            <div class="card" id="instru-cafet">            
-                                <h1>Cafeteras</h1>
-                                <div class="info__card">
-                                    <h2>Cafeteras de Hogar</h2>
-                                    <p>¿Te gusta tu café más fuerte o más suave? Con una cafetera, puedes prepararlo exactamente como te gusta y sin salir de tu hogar.</p>
-                                </div>
-                            </div>
-                        </div>                        
-    
-                        <div class="fondo__card">
-                            <div class="card" id="instru-capsu">            
-                                <h1>Para Recargas</h1>
-                                <div class="info__card">
-                                    <h2>Cápsulas Recargables</h2>
-                                    <p>Contamos con cápsulas, de marcas populares, para que te prepares un expresso en casa.</p>
-                                </div>
-                            </div>
-                        </div>                        
-
-                        <div class="fondo__card">
-                            <div class="card" id="instru-moli">            
-                                <h1>Molinillos</h1>
-                                <div class="info__card">
-                                    <h2>Molinillos Manuales</h2>
-                                    <p>Nuestros molinillos brindan la ventaja de controlar la molienda del café o las especias a mano, permitiendo una experiencia más personalizada y fresca.</p>
-                                </div>
-                            </div>
-                        </div>                        
-    
-                        <div class="fondo__card">
-                            <div class="card" id="instru-jarra">            
-                                <h1>Trastos Cafeteros</h1>
-                                <div class="info__card">
-                                    <h2>Tazas y Jarrones</h2>
-                                    <p>Vajillas, vajillas y más vajillas, de éstilo, prácticas, cerámica o vidrio, lo que precises para disfrutar de un buen café.</p>
-                                </div>
-                            </div>
-                        </div>                        
-    
-                        <div class="fondo__card">
-                            <div class="card" id="instru-baris">            
-                                <h1>De Barista</h1>
-                                <div class="info__card">
-                                    <h2>Herramientas y Utensillos</h2>
-                                    <p>Si estás listo para llevar la preparación de café a un nivel superior, puedes explorar nuestra selección de herramientas y utensillos de gran cálidad.</p>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-
-                    <div class="container__card" id="exp-produ">
-                        <div class="fondo__card">
-                            <div class="card" id="produ-uno">            
-                                <h1>Nombre del Producto</h1>
-                                <div class="info__card">
-                                    <h2>Nombre del Producto</h2>
-                                    <p>Descripción del Producto</p>
-                                </div>
-                            </div>
-                        </div>                        
-    
-                        <div class="fondo__card">
-                            <div class="card" id="produ-dos">            
-                                <h1>Para Recargas</h1>
-                                <div class="info__card">
-                                    <h2>Cápsulas Recargables</h2>
-                                    <p>Contamos con cápsulas, de marcas populares, para que te prepares un expresso en casa.</p>
-                                </div>
-                            </div>
-                        </div>                        
-
-                        <div class="fondo__card">
-                            <div class="card" id="produ-tres">            
-                                <h1>Mol</h1>
-                                <div class="info__card">
-                                    <h2>Nombre del Producto</h2>
-                                    <p>Descripción del Producto</p>
-                                </div>
-                            </div>
-                        </div>                        
-    
-                        <div class="fondo__card">
-                            <div class="card" id="produ-cuat">            
-                                <h1>Nombre del Producto</h1>
-                                <div class="info__card">
-                                    <h2>Nombre del Producto</h2>
-                                    <p>Descripción del Producto</p>
-                                </div>
-                            </div>
-                        </div>                        
-    
-                        <div class="fondo__card">
-                            <div class="card" id="produ-cinc">            
-                                <h1>Nombre del Producto</h1>
-                                <div class="info__card">
-                                    <h2>Nombre del Producto</h2>
-                                    <p>Descripción del Producto</p>
-                                </div>
-                            </div>
-                        </div>                        
-                    </div>
-                </article>    
-            </main>
-
-            <footer>
-                <div>
-                    <ul class="socials">
-                      <li id="face"><i class="ri-facebook-fill"></i></li>                  
-                      <li id="tw"><i class="ri-twitter-fill"></i></li> 
-                      <li><i class="ri-instagram-line"></i></li>                   
-                      <li><i class="ri-whatsapp-line"></i></li>
-                    </ul>
-                    <span>www.Kawakafe.com</span>
-                  </div>
-            </footer>
-
-        </section>
 
         <script src="https://unpkg.com/scrollreveal"></script>
         <!-- <script src="./js/main.js"></script> -->

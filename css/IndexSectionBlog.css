@@ -24,8 +24,6 @@
     width: 100px;
     height: 200px;
     color: var(--mas-white);
-    text-shadow: 0 0 10px var(--text-dark),
-                 0 0 25px var(--primary-color);
     animation: slide-animation 0.5s infinite;
     transition: all 0.5s ease-in-out;
 }
@@ -48,10 +46,14 @@
     width: 200px;
     font-weight: 600;
     transform: rotate(-90deg);
-    z-index: 2;
+    z-index: 20;
+    transition: all 1.3s ease-in-out;
 }
 
-#index .blog__content .pepe { display: none; }
+#index .blog__content .pepe { 
+    display: none;
+    margin: 0px;
+}
 
 #index .blog__content:nth-child(odd) h3 { 
     transform: rotate(90deg); 
@@ -60,24 +62,35 @@
 } 
 
 #index .blog__text { 
-    display: none;
+    display: flex;
+    flex-wrap: nowrap;
+    position: absolute;
+    flex-direction: column;
     justify-content: center;
     overflow: hidden;
+    left: 0;
     gap: 10px;
+    width: 0px;
+    height: 0px;    
     padding: 2rem;
-    height: 300px;
-    left: 51%;
     border-radius: 15px;
-    text-shadow: 0 0 10px var(--text-dark),
-                 0 0 25px var(--primary-color);
-    transition: all 0.5s ease-in-out;
+    box-shadow: transparent;
+    background-color: transparent;
+    z-index: -1;
+    transition: all 0.8s ease;
 }
 
 #index .blog__text h4 { 
-    font-size: 1.8rem;
-    margin-bottom: 1rem;
-    text-shadow: 0 0 10px var(--text-dark),
-                 0 0 25px var(--mas-white);
+    font-size: 0px;
+    color: transparent;
+    margin-bottom: 1rem; 
+    transition: all 0.5s ease;
+}
+
+#index .blog__text p { 
+    font-size: 0px; 
+    color: transparent;
+    transition: all 0.5s ease;
 }
 
 #index .blog__content .blog__cover {
@@ -86,6 +99,8 @@
     position: relative;
     justify-content: center;
     align-items: center;
+    border-radius: 15px;
+    /* transition: all 0.5s ease-in-out; */
 }
 
 #index .blog__content .blog__cover::before {
@@ -117,6 +132,7 @@
    height: 100%;
    border-radius: 15px;
    z-index: 2;
+   transition: all 0.5s ease-in-out;
 }
 
 #index .blog__content #img-blg1 { background-image: url("../img/home/blog1.jpg"); }
@@ -129,19 +145,15 @@
 }
 
 #index .blog__content .blog__btn {
-    width: 60px;
-    height: 40px !important;
-    border-radius: 10%;
-    cursor: pointer;
+    width: 0px;
+    height: 0px;
+    transition: all 0.6s ease-in-out;
 }
 
-#index .blog__content .blog__btn a {
-    font-size: 1.5rem;
-    align-self: center;
-    color: var(--mas-white);
-    text-shadow: 0 0 10px var(--text-dark),
-                 0 0 25px var(--mas-white);
-                 transition: all 0.5s ease-in-out;
+#index .blog__content .blog__btn a { 
+    font-size: 0px;
+    color: transparent;
+    transition: all 0.3s ease-in-out; 
 }
 
 #index .blog__content .btn__span {
@@ -200,7 +212,15 @@
     transition: all 0.5s ease-in-out;
 }
 
-#index .blog__content:hover h3 {display: none;}
+#index .blog__content:hover h3 {
+    transform: rotate(-90deg) translateY(-1000px);
+    transition: all 0.7s ease-in-out;
+}
+
+#index .blog__content:hover:nth-child(odd) h3 {
+    transform: rotate(90deg) translateY(-1000px);
+    transition: all 0.7s ease-in-out;
+}
 
 #index .blog__content:hover .blog__cover { 
     display: block;
@@ -211,30 +231,71 @@
 }
 
 #index .blog__content:hover .blg__img { 
-    width: 300px;
-    height: 300px; 
+    width: 100%;
+    height: 100%; 
+    transition: all 0.2s ease-in-out;
 }
 
+
+/* blog__Text con hover en blog__content */
 #index .blog__content:hover .blog__text { 
     display: flex;
     flex-wrap: nowrap;
     position: relative;
     flex-direction: column;
-    background-color: rgba(19, 2, 0, 0.5);
-    color: #bea297;
+    overflow: hidden;
+    height: 100%;
+    width: 300px;
+    background-color: rgba(19, 2, 0, 0.5);    
     box-shadow: 0 0 5px #f7c9ab,
                 0 0 25px #6b461d, 
                 0 0 50px #301804,
                 0 0 200px #240b00;
+    text-shadow: 0 0 10px var(--text-dark),
+                 0 0 25px var(--primary-color);
+    transition: all 1s ease;
 }
 
-#index .blog__content:hover .blog__text p { text-align: left;}
+#index .blog__content:hover .blog__text h4 {
+    color: #e0c5ba; 
+    font-size: 1.8rem;
+    text-shadow: 0 0 10px var(--text-dark),
+                 0 0 25px var(--primary-color);
+     
+    transition: all 1.5s ease;
+}
 
+#index .blog__content:hover .blog__text p {
+    color: #bea297;
+    font-size: 1.5rem;
+   text-shadow: 0 0 10px var(--text-dark),
+                0 0 25px var(--mas-white);
+    transition: all 1.5s ease;
+}
+
+#index .blog__content:hover .blog__text { text-align: left;}
+
+
+/* Boton con hover blog__content */
 #index .blog__content:hover .blog__btn {
     display: flex;
     align-self: center;
     align-items: center;
     justify-content: center;
+    width: 60px;
+    height: 40px !important;
+    border-radius: 10%;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+#index .blog__content:hover .blog__btn a {
+    font-size: 1.5rem;
+    align-self: center;
+    color: var(--mas-white);
+    text-shadow: 0 0 10px var(--text-dark),
+                 0 0 25px var(--mas-white);
+    transition: all 0.7s ease-in-out;
 }
 
 #index .blog__content:hover .blog__btn:hover {
@@ -254,6 +315,8 @@
 
 #index .blog__content:hover .blog__btn:hover a { padding-left: 1.4rem;}
 
+
+/* Hover en blog__coment */
 #index .blog__coment:hover #btn-coment {
     width: 250px;
     background-color: rgba(19, 2, 0, 0.74);
