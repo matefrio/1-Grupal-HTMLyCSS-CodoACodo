@@ -363,7 +363,7 @@ form #send-container input:hover {
   }
 }
 
-@media (width < 768px) {
+@media (width < 769px) {
   #div-primero {
     margin: 7rem 0 2rem 0;
   }

@@ -12,7 +12,7 @@
     }
 }
 
-@media (width < 768px) {
+@media (width < 769px) {
     #index .blog__content:hover { left: 0;}
     
     #index .blog__content:hover .blog__text {

@@ -117,7 +117,7 @@ footer div span {
     text-shadow: 0 0 15px #0ff135;
 }
 
-@media (width < 768px) {
+@media (width < 769px) {
     .container.gale__content footer {
         margin-top: 6rem;
     }
