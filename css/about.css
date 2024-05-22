@@ -352,6 +352,8 @@ form #send-container input:hover {
     padding: 1rem;
     padding-bottom: 2rem;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1.5rem 1.5rem 0 0;
   }
 
   .about-upper .about-us .about-image-div {
@@ -359,7 +361,7 @@ form #send-container input:hover {
     align-self: center;
     width: 100%;
     top: 90%;
-    margin: 1rem 10%;
+    margin: 0 10% 0 10%;
   }
 }
 @media (width < 768px) {
@@ -373,8 +375,6 @@ form #send-container input:hover {
   .about-us .about-text {
     width: 100%;
     margin: 0 5%;
-    background-color: rgba(255, 255, 255, 0.3);
-    border-radius: 1.5rem 1.5rem 0 0;
   }
 
   .about-us .about-text .sub-title {
