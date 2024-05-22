@@ -42,7 +42,7 @@
     }
 }
 
-@media (width < 768px) {
+@media (width < 769px) {
     #expositor { 
         margin-left: 20%;
         padding: 0; 
