@@ -1,83 +1,294 @@
 <!DOCTYPE html>
-<html
-  lang="es"
-  xmlns:th="http://www.thymeleaf.org"
-  xmlns:sec="http://www.thymeleaf.org/extras/spring-security"
->
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
-      rel="stylesheet"
-    />
-    <link
-      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
-      rel="stylesheet"
-    />
-    <link rel="icon" href="./img/favicon.png" type="image/x-icon" />
-    <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="./css/galeriaCategorias.css" />
-    <link rel="stylesheet" href="./css/galeriaExpositor.css" />
-    <link rel="stylesheet" href="./css/galeriaCatMQ.css" />
-    <link rel="stylesheet" href="./css/galeriaExpMQ.css" />
-    <link rel="stylesheet" href="./css/nav.css" />
-    <link rel="stylesheet" href="./css/navMQ.css" />
-    <link rel="stylesheet" href="./css/footer.css" />
-    <title>Kawa kafé</title>
-  </head>
-  <body>
-    <nav id="nav-Top">
-      <div class="nav__bar">
-        <a href="#" class="nav__logo">
-          <img src="./img/nuevo-icono.png" alt="logo" />
-          <span>Kawa Kafé</span>
-        </a>
-        <div class="nav_menu_btn" id="menu-btn">
-          <i class="ri-menu-3-line"></i>
-        </div>
-      </div>
-      <ul class="nav__links" id="nav-links">
-        <li>
-          <a class="nav__a">
-            <span></span>
-            <span></span>
-            <span></span>
-            Home
-            <span></span>
-          </a>
-        </li>
-        <li>
-          <a class="nav__a" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            Productos
-            <span></span>
-          </a>
-        </li>
-        <li id="quien">
-          <a class="nav__a">
-            <span></span>
-            <span></span>
-            <span></span>
-            Quienes Somos
-            <span></span>
-          </a>
-        </li>
-        <li>
-          <a class="nav__a" href="#">
-            <span></span>
-            <span></span>
-            <span></span>
-            Blog
-            <span></span>
-          </a>
-        </li>
-      </ul>
-    </nav>
-    <main class="home">
-      <h1 class="title">KAWA KAFÉ</h1>
-    </main>
-  </body>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link
+                href="https://cdn.jsdelivr.net/npm/remixicon@3.5.0/fonts/remixicon.css"
+                rel="stylesheet"
+        />
+        <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+        <link rel="icon" href="./img/favicon.png" type="image/x-icon">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/index.css">
+        <link rel="stylesheet" href="./css/indexSectionPoster.css">
+        <link rel="stylesheet" href="./css/indexSectionTienda.css">
+        <link rel="stylesheet" href="./css/IndexSectionBlog.css">
+        <link rel="stylesheet" href="./css/indexMQ.CSS">
+        <link rel="stylesheet" href="./css/nav.css">   
+        <link rel="stylesheet" href="./css/navMQ.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <title>Kawa kafé</title>
+    </head>
+
+    <body>
+        <section class="container gale__content">
+
+            <nav id="nav-Top">
+                <div class="nav__bar">
+                    <a href="#" class="nav__logo">
+                        <img src="./img/nuevo-icono.png" alt="logo" />
+                        <span>Kawa Kafé</span>
+                    </a>
+                    <div class="nav_menu_btn" id="menu-btn">
+                        <i class="ri-menu-3-line"></i>
+                    </div>
+                </div>
+                <ul class="nav__links" id="nav-links">
+                    <li>
+                        <a class="nav__a" href="index.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Home      
+                            <span></span>                                               
+                        </a>
+                    </li>
+                    <li>
+                        <a class="nav__a" href="tienda.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Productos
+                            <span></span>
+                        </a>
+                    </li>
+                    <li id="quien">
+                        <a class="nav__a" href="about.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Quienes Somos
+                            <span></span>
+                        </a>
+                    </li>
+                    <li><a class="nav__a" href="blog.html">
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                            Blog
+                            <span></span>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <main id="index">                 
+                <section id="poster">
+                    <div id="poster-content">
+                        <div id="poster-flex">
+
+                            <div id="poster-text">
+                                <h1>Bienvenidos a Kawa Kafé</h1>
+                                <p id="poster-p1">Sumérgete en una experiencia sensorial única donde el aroma del café recién molido se mezcla con la vibra cálida de nuestro bar. Ya sea que busques comenzar tu día con una taza de café excepcional, disfrutar de una deliciosa repostería, o relajarte por la tarde con un cóctel artesanal, tenemos algo especial para ti.                              
+                                     <br>
+                                </p>
+                                <p id="poster-p2">Explora nuestro menú, descubre nuestros eventos especiales y siéntete como en casa en nuestro acogedor espacio diseñado para inspirar y conectar. Gracias por elegirnos para tu próxima parada de café y bar.                              
+                                    <br>
+                               </p>
+                                <p id="poster-p3">Explora nuestro menú, descubre nuestros eventos especiales y siéntete como en casa en nuestro acogedor espacio diseñado para inspirar y conectar. Gracias por elegirnos para tu próxima parada de café y bar.                              
+                                    <br>
+                               </p>
+                                <p id="poster-p4">   
+                                    <br>
+                                    ¡Te esperamos!
+                                </p>
+                            </div>
+                        </div>  
+                    </div>
+                </section>
+            
+                <!-- Productos Destacados -->
+                <section id="tienda" class="tienda">
+
+                    <h2>Lo que te Ofrecemos</h2>
+                    <div class="tiendas__galeria">
+                        <input type="radio" name="carousel" id="slide1" checked>
+                        <input type="radio" name="carousel" id="slide2">
+                        <input type="radio" name="carousel" id="slide3">
+                        <input type="radio" name="carousel" id="slide4">
+                    
+                        <div class="cover__slide">
+                            <div class="slide">
+                                <div class="tienda__card" id="home-var">
+                                    <h3>Café del Mundo</h3>
+                                    <p>Puro y natural, directamente del productor a su hogar.</p>
+                                    <div class="index__btn">
+                                        <a class="nav__a" href="tienda.html">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Ver Más
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cover__slide">
+                            <div class="slide">
+                                <div class="tienda__card" id="home-blend">
+                                    <h3>Café Especial</h3>
+                                    <p>Una mezcla única para un sabor inigualable. No se pierda la experiencia.</p>
+                                    <div class="index__btn">
+                                        <a class="nav__a" href="tienda.html">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Ver Más
+                                            <span></span>
+                                        </a>
+                                    </div>                            
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cover__slide">
+                            <div class="slide">
+                                <div class="tienda__card" id="home-bar">
+                                    <h3>Nuestro Bar</h3>
+                                    <p>Sientese a gusto, relajese y disfrute de cálido café</p> 
+                                    <div class="index__btn">
+                                        <a class="nav__a" href="tienda.html">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Ver Más
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="cover__slide">
+                            <div class="slide">
+                                <div class="tienda__card" id="home-instru">
+                                    <h3>Nuestros Productos</h3>
+                                    <p>No hay mejor café que el hecho por uno mismo. ¿Necesita Herramientas?</p>
+                                    <div class="index__btn">
+                                        <a class="nav__a" href="tienda.html">
+                                            <span></span>
+                                            <span></span>
+                                            <span></span>
+                                            Ver Más
+                                            <span></span>
+                                        </a>
+                                    </div>
+                                </div>                            
+                            </div>
+                        </div>   
+                    
+                        <div class="carousel-btns">
+                            <label class="index__btn" for="slide1">&#10094;</label>
+                            <label class="index__btn" for="slide2">&#10095;</label>
+                            <label class="index__btn" for="slide3">&#10094;</label>
+                            <label class="index__btn" for="slide4">&#10095;</label>
+                        </div>
+
+                </section>
+            
+                <!-- Quienes Somos -->
+                <section class="blog-us">
+
+                    <div class="blog__inicio">
+                        <h2>Nos interesa:</h2>
+                        <p>Veras más de nosotros, inquietudes y gusto en nuestro blog, donde compartimos noticias, artículos, recetas, todo lo relacionado al potente mundo del café.</p>
+                    </div>                    
+
+                    <div class="blog__content">                        
+                        <div class="blog__cover">
+                            <div class="blg__img" id="img-blg1"></div>
+                        </div>
+
+                        <h3>Affogato</h3>
+                        <p class="pepe">Artículos de interés para los apasionados al café</p>
+
+                        <div class="blog__text">
+                            
+                            <h4>Affogato: Un escape al verano</h4>
+                            <p>Esta deliciosa preparación italiana sirve para...</p>
+                            <p>Lea más en nuestro blog de artículos</p>
+
+                            <div class="blog__btn">
+                                <a href="blog.html">Ir</a>
+                                <span class="btn__span"></span>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="blog__content">
+                        <div class="blog__cover">
+                            <div class="blg__img" id="img-blg2"></div>
+                        </div>
+
+                        <h3>Italy secrets</h3>
+                        <p class="pepe">Lea nuestras publicaciones en el blog de Kawa kafe</p>
+
+                        <div class="blog__text">
+                            
+                            <h4>Hacks de tu cafetera</h4>
+                            <p>8 claves para preparar café en tu cafetera italiana...</p>
+                            <p>Lea más en nuestro blog de artículos</p>
+
+                            <div class="blog__btn">
+                                <a href="blog.html">Ir</a>
+                                <span class="btn__span"></span>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="blog__content">
+                        <div class="blog__cover">
+                            <div class="blg__img" id="img-blg3"></div>
+                        </div>
+
+                        <h3>Café délicieux</h3>
+                        <p class="pepe">Sumerjase en nuestro cálido mundillo y enterese de lo último</p>
+
+                        <div class="blog__text">
+                            
+                            <h4>¿No sabés usar la prensa francesa?</h4>
+                            <p>Enterate cómo hacer tu café en una de las cafeteras más nobles del mercado acá...</p>
+                            <p>Lea más en nuestro blog de artículos</p>
+
+                            <div class="blog__btn">
+                                <a href="blog.html">Ir</a>
+                                <span class="btn__span"></span>
+                            </div>
+                        </div>                        
+                    </div>
+
+                    <div class="blog__coment">
+                        <h2>Desea comunicarse con Nosotros</h2>
+                        <div id="btn-coment">
+                            <a href="about.html">Envíanos un mensaje</a>
+                            <span class="btn__span"></span>
+                        </div>
+                    </div>  
+            
+                </section>                       
+            </main>
+
+            <footer>
+                <div>
+                    <ul class="socials">
+                      <li id="face"><i class="ri-facebook-fill"></i></li>                  
+                      <li id="tw"><i class="ri-twitter-fill"></i></li> 
+                      <li><i class="ri-instagram-line"></i></li>                   
+                      <li><i class="ri-whatsapp-line"></i></li>
+                    </ul>
+                    <span>www.Kawakafe.com</span>
+                  </div>
+            </footer>
+
+        </section>
+
+        <script src="https://unpkg.com/scrollreveal"></script>
+        <!-- <script src="./js/main.js"></script> -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+
+    </body>
 </html>

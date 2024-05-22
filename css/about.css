@@ -1,17 +1,17 @@
 /* ABOUT SUPERIOR */
 #about {
-    margin-top: 1rem;
-    padding: 4rem 0;
-    padding-top: 0rem;
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-items: center;
-    justify-content: center;
-    gap: 30px;
-    width: 100%;
-    height: auto;
+  margin-top: 1rem;
+  padding: 4rem 0;
+  padding-top: 0rem;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  width: 100%;
+  height: auto;
 }
 
 #div-primero {
@@ -24,20 +24,38 @@
 }
 
 #div-primero::before {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: repeating-conic-gradient(from var(--a), rgb(214, 171, 145), rgb(228, 162, 118), rgb(167, 53, 0), rgb(66, 8, 37), rgb(167, 53, 0), rgba(228, 162, 118), rgba(214, 171, 145));
+  background: repeating-conic-gradient(
+    from var(--a),
+    rgb(214, 171, 145),
+    rgb(228, 162, 118),
+    rgb(167, 53, 0),
+    rgb(66, 8, 37),
+    rgb(167, 53, 0),
+    rgba(228, 162, 118),
+    rgba(214, 171, 145)
+  );
   border-radius: 15px;
   animation: rotating 4s linear infinite;
   filter: blur(3px);
 }
 
 #div-primero::after {
-  content: '';
+  content: "";
   position: absolute;
   inset: 0;
-  background: repeating-conic-gradient(from var(--a), rgb(214, 171, 145), rgb(228, 162, 118), rgb(167, 53, 0), rgb(66, 8, 37), rgb(167, 53, 0), rgba(228, 162, 118), rgba(214, 171, 145));
+  background: repeating-conic-gradient(
+    from var(--a),
+    rgb(214, 171, 145),
+    rgb(228, 162, 118),
+    rgb(167, 53, 0),
+    rgb(66, 8, 37),
+    rgb(167, 53, 0),
+    rgba(228, 162, 118),
+    rgba(214, 171, 145)
+  );
   border-radius: 15px;
   animation: rotating 4s linear infinite;
   filter: blur(3px);
@@ -51,154 +69,364 @@
   height: 100%;
 }
 
-  .about-upper span {
-    display: block;
-    position: absolute;
-    background-image: linear-gradient(rgba(240, 167, 100, 0.699), transparent,rgba(221, 94, 20, 0.699)), url("../img/fondo-about.jpeg");
-    background-size: cover;
-    transform: rotate(180deg);
-    width: 100%;
-    height: 100%;
-    z-index: 2;
-  }
-  
-  .about-upper .title {
-    font-size: 2.3rem;
-    position: relative;
-    text-shadow: 0 10px 15px var(--primary-color);
-    padding: 2rem;
-    text-align: center;
-    font-weight: bold;
-    z-index: 10;
-  }
-  
+.about-upper span {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(
+      rgba(240, 167, 100, 0.699),
+      transparent,
+      rgba(221, 94, 20, 0.699)
+    ),
+    url("../img/fondo-about.jpeg");
+  background-size: cover;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+
+.about-upper .title {
+  font-size: 2.3rem;
+  position: relative;
+  text-shadow: 0 10px 15px var(--primary-color);
+  text-shadow: 0 0 10px var(--mas-white), 0 0 25px var(--white),
+    0 0 40px var(--primary-color);
+  padding: 2rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.about-upper .about-us {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 3rem;
+}
+
+.about-us .about-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  position: relative;
+  color: var(--text-dark);
+  text-shadow: 0 0 10px var(--mas-white), 0 0 25px var(--white),
+    0 0 40px var(--primary-color);
+  padding: 2rem;
+  padding-top: 0;
+  width: 50%;
+  z-index: 2;
+}
+
+.about-us .about-text .sub-title {
+  font-weight: bold;
+  font-size: 2rem;
+  padding-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.about-us .about-text .text {
+  font-size: 1.6rem;
+  text-align: justify;
+}
+
+.about-upper .about-us .about-image-div {
+  background-image: url("../img/barman.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+  margin-left: 2rem;
+  width: 40%;
+  height: 500px;
+  border-radius: 2%;
+  z-index: 2;
+}
+
+/* ABOUT INFERIOR */
+#div-segundo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 80%;
+  height: auto;
+}
+
+.about-lower span {
+  display: block;
+  position: absolute;
+  background-image: linear-gradient(
+      rgba(240, 167, 100, 0.699),
+      transparent,
+      rgba(221, 94, 20, 0.699)
+    ),
+    url("../img/pexels-polina-tankilevitch-4109747.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  transform: rotate(180deg);
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  z-index: -1;
+}
+
+.about-lower {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  border-radius: 15px;
+  width: 100%;
+  box-shadow: -15px 15px 30px;
+}
+
+.about-lower .title {
+  font-size: 2.3rem;
+  position: relative;
+  text-shadow: 0 10px 15px var(--primary-color);
+  text-shadow: 0 0 10px var(--mas-white), 0 0 25px var(--white),
+    0 0 40px var(--primary-color);
+  padding: 2rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.about-lower .contact {
+  display: flex;
+  padding: 2.5%;
+  height: 100%;
+  overflow: hidden;
+}
+
+.contact .contact-map {
+  height: 100%;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+  overflow: hidden;
+}
+
+.contact-map {
+  position: relative;
+  width: 100%;
+  padding-top: 0;
+}
+
+.contact-map iframe {
+  position: relative;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  width: 100%;
+  height: 80vh;
+}
+
+.contact .contact-form .sub-title {
+  font-size: 2.3rem;
+  position: relative;
+  text-shadow: 0 10px 15px var(--primary-color);
+  text-shadow: 0 0 10px var(--mas-white), 0 0 25px var(--white),
+    0 0 40px var(--primary-color);
+  padding: 2rem;
+  padding-bottom: 0;
+  text-align: center;
+  font-weight: bold;
+  z-index: 10;
+}
+
+.contact .contact-form {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-color: rgba(255, 255, 255, 0.5);
+  border-radius: 15px;
+}
+
+.contact .contact-form form {
+  width: 100%;
+  height: 100%;
+}
+
+.contact-form form {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  width: 100%;
+  height: 100%;
+  color: var(--text-dark);
+  font-size: 1.3rem;
+}
+
+form .input-container {
+  display: flex;
+  flex-direction: column;
+  padding: 0.3rem;
+}
+
+form .input-container label {
+  text-align: center;
+  font-weight: bold;
+}
+
+form .input-container .contact-preference {
+  display: flex;
+  justify-content: space-around;
+}
+
+form .input-container input {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  background: radial-gradient(rgb(255, 220, 197), rgba(240, 167, 100));
+  outline: black;
+  font-size: 1rem;
+}
+
+form .input-container #reason {
+  width: 40%;
+  text-align: center;
+  margin: auto;
+  background: radial-gradient(rgb(255, 220, 197), rgba(240, 167, 100));
+  outline: black;
+  font-size: 1rem;
+}
+
+form #message-container {
+  height: 60%;
+}
+
+.input-container #message-input {
+  display: flex;
+  width: 70%;
+  height: 100%;
+  margin: auto;
+  background: radial-gradient(rgb(255, 220, 197), rgba(240, 167, 100));
+  font-size: 1.6rem;
+  text-align: start;
+  vertical-align: text-top;
+  resize: none;
+  outline: black;
+}
+
+form #send-container input {
+  display: inline-block;
+  padding: 0.8rem;
+  width: auto;
+  height: auto;
+  border: none;
+  background-image: linear-gradient(
+    92.88deg,
+    rgb(255, 191, 148) 9.16%,
+    rgba(240, 167, 100) 43.89%,
+    rgb(247, 150, 60) 64.72%
+  );
+  border-radius: 8px;
+}
+
+form #send-container input:hover {
+  display: inline-block;
+  padding: 0.8rem;
+  width: auto;
+  height: auto;
+  border: none;
+  cursor: pointer;
+  box-shadow: var(--text-dark) 0 1px 15px;
+  transition-duration: 0.1s;
+}
+
+/* MQ */
+@media (width < 1000px) {
   .about-upper .about-us {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 3rem;
-  }
-  
-  .about-us .about-text {
-    display: flex;
-    flex-direction: column;
-    justify-content: left;
-    align-items: center;
-    position: relative;
-    color: var(--text-dark);
     padding: 2rem;
-    width: 50%;
-    z-index: 2;
   }
-  
+
+  .about-us .about-text {
+    width: 100%;
+    margin: 0 10%;
+    padding: 1rem;
+    padding-bottom: 2rem;
+    justify-content: center;
+  }
+
+  .about-upper .about-us .about-image-div {
+    display: flex;
+    align-self: center;
+    width: 100%;
+    top: 90%;
+    margin: 1rem 10%;
+  }
+}
+
+@media (width < 768px) {
+  #div-primero {
+    margin: 7rem 0 2rem 0;
+  }
+  .about-upper .about-us {
+    padding: 1rem;
+  }
+
+  .about-us .about-text {
+    width: 100%;
+    margin: 0 5%;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 1.5rem 1.5rem 0 0;
+  }
+
   .about-us .about-text .sub-title {
-    font-weight: bold;
-    font-size: 2rem;
-    padding-right: 2rem;
-    margin-bottom: 1rem;
+    font-weight: bolder;
   }
-  
+
   .about-us .about-text .text {
-    font-size: 1.6rem;
-    text-align: justify;
+    font-weight: bolder;
   }
-  
-  .about-upper .about-us .about-image-div  {
-    background-image: url(../img/barman.jpg);
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    margin-left: 2rem;
-    width: 40%;
-    height: 500px;
-    border-radius: 2%;
-    z-index: 2;
+
+  .about-upper .about-us .about-image-div {
+    margin: 0 5%;
+    margin-bottom: 2rem;
   }
-  
-  /* ABOUT INFERIOR */
-  .about-lower {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    border-radius: 15px;
-    width: 60%;
-    background-color: rgba(177, 150, 110, 0.699);
-    box-shadow: -15px 15px 30px;
-  }
-  
-  .about-lower .title {
-    padding: 1.25%;
-    text-align: center;
-    font-weight: bold;
-  }
-  
+
   .about-lower .contact {
-    display: flex;
-    padding: 2.5%;
-    height: 50vh;
+    flex-direction: column;
+    padding: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.3);
   }
-  
+
   .contact .contact-map {
-    height: 100%;
-    width: 50%;
+    position: relative;
+    width: 100%;
+    padding-bottom: 75%;
+    height: 0;
+    overflow: hidden;
   }
-  
+
   .contact-map iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 100%;
     height: 100%;
+    border: 0;
   }
-  
-  .contact .contact-form .sub-title {
-    text-align: center;
-  }
-  
+
   .contact .contact-form {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
-    /* border: 2px solid black;
-    background-color: white; */
-  }
-  
-  .contact .contact-form form {
+    position: relative;
     width: 100%;
-    height: 100%;
+    height: 100vh;
+    background-color: rgba(255, 255, 255, 0.3);
+    border-radius: 0 0 1.5rem 1.5rem;
   }
-  
-  .contact-form form {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    height: 100%;
-  }
-  
-  form .input-container {
-    display: flex;
-    flex-direction: column;
-    height: 10%;
-    /* padding: 2.5% 0 2.5% 0; */
-  }
-  
-  form .input-container label {
-    text-align: center;
-  }
-  
+
   form .input-container input {
-    width: 40%;
-    text-align: center;
-    margin: auto;
-    background-color: antiquewhite;
+    width: 90%;
   }
-  
-  form #message-container {
-    height: 60%;
-  }
-  
+
   .input-container #message-input {
-    width: 70%;
-    height: 100%;
+    width: 100%;
   }
-  
-  form #send-container input {
-    width: auto;
-    height: auto;
-  }
+}

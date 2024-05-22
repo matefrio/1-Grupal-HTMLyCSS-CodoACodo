@@ -66,8 +66,25 @@ h2 {
     gap: 1rem;
 }
 
+@property --a {
+    syntax: '<angle>';
+    inherits: false;
+    initial-value: 0deg;
+}
+
+@keyframes rotating {
+    0% { --a: 0deg; }
+    100% { --a: 360deg; }
+}
+
 @media (width > 768px) {
     .socials > div {
         justify-content: flex-start;
     }
+}
+
+@keyframes slide-animation {
+    0%, 12.5% { transform: translateY(-1px); }
+    37.5%, 62.5% { transform: translateY(0%); }
+    87.5%, 100% { transform: translateY(-1px); }
 }

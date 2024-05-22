@@ -1,0 +1,113 @@
+#index {
+    margin-top: 1rem;
+    padding: 4rem 0;
+    padding-top: 0rem;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    width: 100%;
+    height: auto;
+    background-image: linear-gradient(to bottom, transparent, rgba(19, 2, 0, 0.548), rgba(19, 2, 0, 0.158), rgba(19, 2, 0, 0.548), transparent);
+}
+
+#index h2 { font-size: 3rem;}
+
+#index h3 { font-size: 2.2rem;}
+
+#index  p { font-size: 1.5rem; }
+
+/* Poster */
+#poster {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin-top: 87px;
+    width: 100%;
+    height: 600px;
+}
+
+#poster::before {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a), rgb(214, 171, 145), rgb(228, 162, 118), rgb(167, 53, 0), rgb(66, 8, 37), rgb(167, 53, 0), rgba(228, 162, 118), rgba(214, 171, 145));
+    border-radius: 15px;
+    animation: rotating 4s linear infinite;
+    filter: blur(3px);
+}
+
+#poster::after {
+    content: '';
+    position: absolute;
+    inset: 0;
+    background: repeating-conic-gradient(from var(--a), rgb(214, 171, 145), rgb(228, 162, 118), rgb(167, 53, 0), rgb(66, 8, 37), rgb(167, 53, 0), rgba(228, 162, 118), rgba(214, 171, 145));
+    border-radius: 15px;
+    animation: rotating 4s linear infinite;
+    filter: blur(3px);
+}
+
+#poster-flex {
+    background-image: linear-gradient(rgba(44, 15, 2, 0.548), transparent,  rgb(19, 2, 0, 0.548)), url("../img/home/fondo-poster.jpg");
+    background-size: cover;
+    position: absolute;
+    overflow: hidden; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    border-radius: 15px;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+#poster-text { 
+    width: 90%;
+    height: 90%;
+    text-align: left;
+    color: var(--mas-white);
+    text-shadow: 0 0 10px var(--text-dark),
+                 0 0 25px var(--primary-color);
+}
+
+#poster-text h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+    margin-left: 2rem;
+    margin-right: 40%;
+    text-shadow: 10px 15px 15px var(--text-dark),
+                    10px 15px 30px var(--primary-color);
+}
+
+#poster-text p {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+}
+
+#poster-p2 { 
+    display: none;
+    margin-left: 15%;
+    margin-right: 15%;
+    text-align: center;
+}
+
+#poster-p3 { 
+    display: none;
+    margin-left: 40%;
+    margin-right: 2rem;
+}
+
+#poster-p1, #poster-p4 { 
+    margin-left: 2rem;
+    margin-right: 40%;
+}
+
+#poster-p4 {
+    font-size: 2.3rem !important;
+}

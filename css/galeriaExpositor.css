@@ -38,13 +38,13 @@
 
 #exp-ini { display: none; }
 
-#exp-var { display: flex; }
+#exp-var { display: none; }
 
 #exp-comb { display: none; }
 
 #exp-sab { display: none; }
 
-#exp-instru { display: none; }
+#exp-instru { display: flex; }
 
 #exp-produ { display: none; }
 
@@ -58,28 +58,28 @@
 
 .container__card .fondo__card:nth-child(5) { height: 480px; }
 
-.container__card .fondo__card:nth-child(1) .card { background-image: url("../img/nosotros/prod1.jpg"); }
+.container__card .fondo__card:nth-child(1) .card { background-image: url("../img/tienda/nosotros/prod1.jpg"); }
 
-.container__card .fondo__card:nth-child(2) .card { background-image: url("../img/nosotros/prod2.jpg"); }
+.container__card .fondo__card:nth-child(2) .card { background-image: url("../img/tienda/nosotros/prod2.jpg"); }
 
-.container__card .fondo__card:nth-child(3) .card { background-image: url("../img/nosotros/prod3.jpg"); }
+.container__card .fondo__card:nth-child(3) .card { background-image: url("../img/tienda/nosotros/prod3.jpg"); }
 
-.container__card .fondo__card:nth-child(4) .card { background-image: url("../img/nosotros/prod4.jpg"); }
+.container__card .fondo__card:nth-child(4) .card { background-image: url("../img/tienda/nosotros/prod4.jpg"); }
 
-.container__card .fondo__card:nth-child(5) .card { background-image: url("../img/nosotros/prod5.jpg"); }
+.container__card .fondo__card:nth-child(5) .card { background-image: url("../img/tienda/nosotros/prod5.jpg"); }
 
-#exp-var .fondo__card:nth-child(1) .card { background-image: url("../img/variedad/prod1.jpg"); }
+#exp-var .fondo__card:nth-child(1) .card { background-image: url("../img/tienda/variedad/prod1.jpg"); }
 
-#exp-var .fondo__card:nth-child(2) .card { background-image: url("../img/variedad/prod2.jpg"); }
+#exp-var .fondo__card:nth-child(2) .card { background-image: url("../img/tienda/variedad/prod2.jpg"); }
 
-#exp-var .fondo__card:nth-child(3) .card { background-image: url("../img/variedad/prod3.jpg"); }
+#exp-var .fondo__card:nth-child(3) .card { background-image: url("../img/tienda/variedad/prod3.jpg"); }
 
 #exp-var .fondo__card:nth-child(4) .card {
-    background-image: url("../img/variedad/prod4.jpg");
+    background-image: url("../img/tienda/variedad/prod4.jpg");
     background-position: left;
 }
 
-#exp-var .fondo__card:nth-child(5) .card { background-image: url("../img/variedad/prod5.jpg"); }
+#exp-var .fondo__card:nth-child(5) .card { background-image: url("../img/tienda/variedad/prod5.jpg"); }
 
 #exp-comb .fondo__card:nth-child(1) {
     width: 25%;
@@ -96,36 +96,36 @@
     height: 560px;
 }
 
-#exp-comb .fondo__card:nth-child(1) .card { background-image: url("../img/combos/prod1.jpg"); }
+#exp-comb .fondo__card:nth-child(1) .card { background-image: url("../img/tienda/combos/prod1.jpg"); }
 
-#exp-comb .fondo__card:nth-child(2) .card { background-image: url("../img/combos/prod2.jpeg"); }
+#exp-comb .fondo__card:nth-child(2) .card { background-image: url("../img/tienda/combos/prod2.jpeg"); }
 
-#exp-comb .fondo__card:nth-child(3) .card { background-image: url("../img/combos/prod3.jpg"); }
+#exp-comb .fondo__card:nth-child(3) .card { background-image: url("../img/tienda/combos/prod3.jpg"); }
 
-#exp-sab .fondo__card:nth-child(1) .card { background-image: url("../img/bar/prod1.jpg"); }
+#exp-sab .fondo__card:nth-child(1) .card { background-image: url("../img/tienda/bar/prod1.jpg"); }
 
-#exp-sab .fondo__card:nth-child(2) .card { background-image: url("../img/bar/prod2.jpg"); }
+#exp-sab .fondo__card:nth-child(2) .card { background-image: url("../img/tienda/bar/prod2.jpg"); }
 
-#exp-sab .fondo__card:nth-child(3) .card { background-image: url("../img/bar/prod3.jpg"); }
+#exp-sab .fondo__card:nth-child(3) .card { background-image: url("../img/tienda/bar/prod3.jpg"); }
 
-#exp-sab .fondo__card:nth-child(4) .card { background-image: url("../img/bar/prod4.jpg"); }
+#exp-sab .fondo__card:nth-child(4) .card { background-image: url("../img/tienda/bar/prod4.jpg"); }
 
-#exp-sab .fondo__card:nth-child(5) .card { background-image: url("../img/bar/prod5.jpg"); }
+#exp-sab .fondo__card:nth-child(5) .card { background-image: url("../img/tienda/bar/prod5.jpg"); }
 
-#exp-instru .fondo__card:nth-child(1) .card { background-image: url("../img/instrumentos/prod1.jpg"); }
+#exp-instru .fondo__card:nth-child(1) .card { background-image: url("../img/tienda/instrumentos/prod1.jpg"); }
 
-#exp-instru .fondo__card:nth-child(2) .card { background-image: url("../img/instrumentos/prod2.jpg"); }
+#exp-instru .fondo__card:nth-child(2) .card { background-image: url("../img/tienda/instrumentos/prod2.jpg"); }
 
-#exp-instru .fondo__card:nth-child(3) .card { background-image: url("../img/instrumentos/prod3.jpg"); }
+#exp-instru .fondo__card:nth-child(3) .card { background-image: url("../img/tienda/instrumentos/prod3.jpg"); }
 
 #exp-instru .fondo__card:nth-child(4) .card {
     display: flex;
-    background-image: url("../img/instrumentos/prod4.jpg");
+    background-image: url("../img/tienda/instrumentos/prod4.jpg");
 }
 
-#exp-instru .fondo__card:nth-child(4) .card { background-image: url("../img/instrumentos/prod4.jpg"); }
+#exp-instru .fondo__card:nth-child(4) .card { background-image: url("../img/tienda/instrumentos/prod4.jpg"); }
 
-#exp-instru .fondo__card:nth-child(5) .card { background-image: url("../img/instrumentos/prod5.jpg"); }
+#exp-instru .fondo__card:nth-child(5) .card { background-image: url("../img/tienda/instrumentos/prod5.jpg"); }
 
 .fondo__card .card h1 {
     font-size: 35px;
@@ -186,17 +186,6 @@
     opacity: 0.75;
 } 
 
-@property --a {
-    syntax: '<angle>';
-    inherits: false;
-    initial-value: 0deg;
-}
-
-@keyframes rotating {
-    0% { --a: 0deg; }
-    100% { --a: 360deg; }
-}
-
 .fondo__card:hover {
     width: 100% !important;
     height: 100% !important;
@@ -216,11 +205,6 @@
                  0 0 40px var(--primary-color);
     transition: all 0.3s ease-in-out;
 }
-
-/* .fondo__card:hover .info__card {
-    transform: translateY(0%);
-    transition: all 1s ease;
-} */
 
 .fondo__card:hover .info__card h2 {
     font-size: 1.8rem !important;
