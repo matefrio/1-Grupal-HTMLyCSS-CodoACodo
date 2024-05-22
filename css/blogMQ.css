@@ -20,11 +20,11 @@
 
     #blog .cover_art_img { margin: 2rem 0rem; }
 
-    #blog .blog__anexo .cover_art_img { 
-        width: 500px;
-    }
+    #blog .blog__anexo .anexo__child { width: 50%;}
 
-    #blog .blog__anexo .cover_art_img { margin: 2rem 2rem; }
+    #blog .blog__anexo .cover_art_img { width: 450px; }
+
+    /* #blog .blog__anexo .cover_art_img { margin: 2rem 1rem; } */
 
     #blog .blog__anexo .article__txt { margin: 1rem 5rem; }
 }
