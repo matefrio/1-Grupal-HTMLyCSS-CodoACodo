@@ -28,6 +28,8 @@
 }
 
 @media (width > 1400px) {
+    #blog .principal__img .article__img { background-position: center; }
+
     #blog .article__title h1 { font-size: 3rem; }
 
     #blog .article__title h2 { font-size: 2.2rem; }

@@ -1,5 +1,6 @@
 #galeria {
     margin-top: 1rem;
+    margin-bottom: 4rem;
     padding: 4rem 0;
     padding-top: 0rem;
     position: relative;
@@ -76,6 +77,8 @@
 
 #cat__text:nth-child(1) { display: inline-block; }
 
+#cat__bar ul { list-style-type: none; }
+
 #cat__bar .nav__a {
     transition: all 0.4s ease-in;
     color: #bea297;
@@ -106,7 +109,10 @@
     padding: 0.5rem 1rem;
 }
 
-.nav__a > * { color: var(--#bea297); }
+.nav__a > * { 
+    cursor: pointer;
+    color: var(--#bea297); 
+}
 
 /* cat__link activo por hover */
 #cat-links:hover #cat-links .nav__a:hover { transition: all 0.4s ease-in; }

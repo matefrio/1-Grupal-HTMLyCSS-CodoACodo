@@ -9,15 +9,18 @@
 .container__card {
     width: 100%;
     height: 100%;
-    display: flex;
+    display: none;
     justify-content: space-around;
     align-items: center;
 }
+
+#exp-ini { display: flex;}
 
 .fondo__card {
     width: 120px;
     cursor: pointer;
     position: relative;
+    border-radius: 15px;
     transition: 0.7s ease;
 }
 
@@ -35,18 +38,6 @@
     background-position: center;
     z-index: 2;
 }
-
-#exp-ini { display: none; }
-
-#exp-var { display: none; }
-
-#exp-comb { display: none; }
-
-#exp-sab { display: none; }
-
-#exp-instru { display: flex; }
-
-#exp-produ { display: none; }
 
 .container__card .fondo__card:nth-child(1) { height: 480px; }
 
@@ -126,6 +117,16 @@
 #exp-instru .fondo__card:nth-child(4) .card { background-image: url("../img/tienda/instrumentos/prod4.jpg"); }
 
 #exp-instru .fondo__card:nth-child(5) .card { background-image: url("../img/tienda/instrumentos/prod5.jpg"); }
+
+#exp-produ .fondo__card:nth-child(1) .card {background-image: url("../img/tienda/productoAusente.jpg"); }
+
+#exp-produ .fondo__card:nth-child(2) .card {background-image: url("../img/tienda/productoAusente.jpg"); }
+
+#exp-produ .fondo__card:nth-child(3) .card {background-image: url("../img/tienda/productoAusente.jpg"); }
+
+#exp-produ .fondo__card:nth-child(4) .card {background-image: url("../img/tienda/productoAusente.jpg"); }
+
+#exp-produ .fondo__card:nth-child(5) .card {background-image: url("../img/tienda/productoAusente.jpg"); }
 
 .fondo__card .card h1 {
     font-size: 35px;

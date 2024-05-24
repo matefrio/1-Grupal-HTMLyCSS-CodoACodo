@@ -123,6 +123,7 @@ input[type="radio"]:nth-of-type(4):checked ~ .cover__slide:nth-of-type(4) { disp
     transition: 0.3s;
     color: var(--mas-white);
     text-align: center;
+    cursor: pointer;
     transition: transform 0.5s ease-out;
 }
 

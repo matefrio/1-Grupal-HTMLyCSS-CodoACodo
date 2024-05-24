@@ -224,8 +224,11 @@
     position: absolute;
     width: 300px;
     height: 300px;
+    box-shadow: -15px -15px 5px rgba(19, 2, 0, 0.400);
     transition: all 0.5s ease-in-out;
 }
+
+#index .blog__content:nth-child(odd):hover .blog__cover { box-shadow: 15px -15px 5px rgba(19, 2, 0, 0.400); } 
 
 #index .blog__content:hover .blg__img { 
     width: 100%;
