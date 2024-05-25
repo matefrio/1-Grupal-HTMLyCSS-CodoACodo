@@ -14,7 +14,9 @@
     align-items: center;
 }
 
+/* Con el main.js activo èste fragmento se debe eliminar */
 #exp-ini { display: flex;}
+/* ----------------------------------------------------- */
 
 .fondo__card {
     width: 120px;

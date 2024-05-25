@@ -53,32 +53,25 @@ const expProduContainer = document.getElementById("exp-produ");
 
 
 // Funciones de Navegación con Cards dentro del Expositor
+function IniCard() {
+  containerCard.forEach(container => { container.style.display = "none"; });
+  expIniContainer.style.display = "flex";
+}
 
 inicioCard.forEach(ini => {
   ini.addEventListener("click", (e) => {
+    containerCard.forEach(container => { container.style.display = "none"; });
+
     switch (ini.id) {
-      case "ini-var":
-        containerCard.forEach(container => { container.style.display = "none"; });
-        expVarContainer.style.display = "flex";
-        console.log("Variedades");
+      case "ini-var": expVarContainer.style.display = "flex";
         break;
-      case "ini-comb":
-        containerCard.forEach(container => { container.style.display = "none"; });
-        expCombContainer.style.display = "flex";
-        console.log("Combinaciones");
+      case "ini-comb": expCombContainer.style.display = "flex";
         break;
-      case "ini-sab":
-        containerCard.forEach(container => { container.style.display = "none"; });
-        expSabContainer.style.display = "flex";
-        console.log("Sabores");
+      case "ini-sab": expSabContainer.style.display = "flex";
         break;
-      case "ini-instru":
-        containerCard.forEach(container => { container.style.display = "none"; });
-        expInstruContainer.style.display = "flex";
-        console.log("Instrucciones");
+      case "ini-instru": expInstruContainer.style.display = "flex";
         break;
-      default:
-        console.log("ID no reconocido");
+      default: console.log("ID no reconocido");
     }
   });
 });
@@ -88,7 +81,6 @@ simpleCard.forEach(card => {
     if (!card.classList.contains("ini__card")) {
       containerCard.forEach(container => { container.style.display = "none"; });
       expProduContainer.style.display = "flex";
-      console.log("Productos");
     } 
   });
 });
@@ -97,11 +89,15 @@ navExpo.forEach(nav => {
   nav.addEventListener("click", (e) => {
     containerCard.forEach(container => { container.style.display = "none"; });
     expProduContainer.style.display = "flex";
-    console.log("Productos");
   });
 });
 
 // Funciones de Navegación a Expositor desde Index con Container selecto display flex
+
+function IniTienda() {
+  const paramTienda = "ini"
+  window.location.href = `tienda.html?parametro=${paramTienda}`;
+}
 
 function VarTienda() {
   const paramTienda = "var"
@@ -127,29 +123,20 @@ window.onload = function() {
   const urlParams = new URLSearchParams(window.location.search);
   const parametro = urlParams.get('parametro');
 
+  containerCard.forEach(container => { container.style.display = "none"; });
+
   switch (parametro) {
-    case "var":
-      containerCard.forEach(container => { container.style.display = "none"; });
-      expVarContainer.style.display = "flex";
-      console.log("Variedades");
+    case "ini": expIniContainer.style.display = "flex";
       break;
-    case "comb":
-      containerCard.forEach(container => { container.style.display = "none"; });
-      expCombContainer.style.display = "flex";
-      console.log("Combinaciones");
+    case "var": expVarContainer.style.display = "flex";
       break;
-    case "bar":
-      containerCard.forEach(container => { container.style.display = "none"; });
-      expSabContainer.style.display = "flex";
-      console.log("Sabores");
+    case "comb": expCombContainer.style.display = "flex";
       break;
-    case "instru":
-      containerCard.forEach(container => { container.style.display = "none"; });
-      expInstruContainer.style.display = "flex";
-      console.log("Instrucciones");
+    case "bar": expSabContainer.style.display = "flex";
       break;
-    default:
-      console.log("ID no reconocido");
+    case "instru": expInstruContainer.style.display = "flex";
+      break;
+    default: console.log("ID no reconocido");
   }
 };
 
