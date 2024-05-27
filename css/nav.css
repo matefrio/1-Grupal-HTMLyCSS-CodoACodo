@@ -84,7 +84,10 @@ nav {
 /* Hover en nav-Top cuando mediaQuery es menor a 768 px */
 #nav-Top:hover #nav-links { transform: translateY(0); }
 
-#nav-Top:hover #nav-links .nav__a { color: var(--white); }
+#nav-Top:hover #nav-links .nav__a { 
+    color: var(--white); 
+    cursor: pointer;
+}
 
 #nav-Top:hover #nav-links #btn-perfil { color: var(--white); }
 
